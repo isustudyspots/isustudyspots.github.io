@@ -1,6 +1,6 @@
 body {
   width: 200vw;
-  height: 200vh;
+  height: 120vh;
   font-family: Verdana, Arial, sans-serif;
   background-color: #c00;
   color: #ff0;
@@ -21,6 +21,6 @@ iframe {
 }
 
 #map {
-  width: 46%;
-  height: 40%;
+  width: 48%;
+  height: 70%;
 }
