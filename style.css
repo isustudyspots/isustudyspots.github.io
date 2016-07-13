@@ -11,7 +11,7 @@ body {
   text-shadow: 2px 2px 5px black;
 }
 h1 {
-  margin: auto;
+  text-align: center;
 }
 
 iframe {
