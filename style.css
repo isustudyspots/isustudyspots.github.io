@@ -1,26 +1,15 @@
 body {
-  width: 200vw;
-  height: 120vh;
+  width: 100%;
   font-family: Verdana, Arial, sans-serif;
   background-color: #c00;
   color: #ff0;
 }
 
 #header {
-  width: 48%;
+  width: 98%;
   text-shadow: 2px 2px 5px black;
 }
 h1 {
   text-align: center;
 }
 
-iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-
-#map {
-  width: 48%;
-  height: 50%;
-}
