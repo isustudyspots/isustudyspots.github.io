@@ -23,6 +23,7 @@ margin: auto;
 table{
   width:98%;
   font-weight: bold;
+  border-collapse: collapse;
 }
 
 tr:nth-child(odd) {
