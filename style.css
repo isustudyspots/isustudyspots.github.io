@@ -17,8 +17,15 @@ h1 {
 img {
 width: 98%;
 max-width: 480px;
+margin: auto;
 }
 
-table, td {
+table{
   border: 1px solid yellow;
+  border-collapse: collapse;
+  width:98%;
+}
+td {
+    border: 1px solid yellow;
+    height:1.8em;
 }
