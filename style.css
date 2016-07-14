@@ -19,6 +19,6 @@ width: 98%;
 max-width: 480px;
 }
 
-table, tr {
+table, td {
   border: 1px solid yellow;
 }
