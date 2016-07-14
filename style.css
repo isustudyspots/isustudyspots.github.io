@@ -16,5 +16,9 @@ h1 {
 
 img {
 width: 98%;
+max-width: 480px;
 }
 
+table {
+  border: 1px solid yellow;
+}
