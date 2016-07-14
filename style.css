@@ -32,24 +32,28 @@ table{
 a:link {
     color: red;
     text-align: center;
+      vertical-align: middle;
 }
 
 /* visited link */
 a:visited {
     color: red;
     text-align: center;
+      vertical-align: middle;
 }
 
 /* mouse over link */
 a:hover {
     color: blue;
     text-align: center;
+      vertical-align: middle;
 }
 
 /* selected link */
 a:active {
     color: blue;
       text-align: center;
+      vertical-align: middle;
 }
 
 a {
@@ -62,6 +66,8 @@ a {
     -1px 1px 0 #000,
      1px 1px 0 #000;
   vertical-align: middle;
+  font-size:2em;
+  
 }
 
 
