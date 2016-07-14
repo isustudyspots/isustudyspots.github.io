@@ -59,11 +59,12 @@ a {
 }
 
 #link {
-  width: 80%;
+  width: 45%;
   background-color: yellow;
   border: 3px solid black;
   margin: auto;
   text-align: center;
+  height: 5em;
 }
 
 tr:nth-child(odd) {
