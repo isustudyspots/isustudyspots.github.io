@@ -24,6 +24,7 @@ table{
   width:98%;
   font-weight: bold;
   border-collapse: collapse;
+  text-shadow: 2px 2px 5px black;
 }
 
 tr:nth-child(odd) {
