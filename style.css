@@ -82,11 +82,7 @@ a {
 tr:nth-child(odd) {
   background-color: #ffff00;
   color:red;
-   text-shadow:
-   -1px -1px 0 #000,  
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-     1px 1px 0 #000;
+  box-shadow: 2px 2px 5px black
 }
 
 tr {
