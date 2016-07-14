@@ -21,11 +21,18 @@ margin: auto;
 }
 
 table{
-  border: 1px solid yellow;
+  border: 3px solid yellow;
   border-collapse: collapse;
   width:98%;
+  
 }
+tr:nth-child(even) {
+  background-color: #ffff00;
+  color:red;
+}
+
 tr {
-    border: 1px solid yellow;
-    height:1.8em;
+    border: 3px solid yellow;
+    height:3em;
+    
 }
