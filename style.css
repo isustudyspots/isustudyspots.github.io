@@ -4,7 +4,9 @@ font-family: Verdana, Arial, sans-serif;
 background-color: #c00;
 color: #ff0;
 }
-
+ul, li {
+	list-style:none;
+}
 #home {
   background: url("backgroundtest.png");
   background-repeat: no-repeat;
