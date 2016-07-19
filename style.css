@@ -89,7 +89,23 @@ tr {
     height:2.5em;
 }
 */
+body
+{
+	font-family: Lucida Grande, Helvetica Neue, Helvetica, Arial, Verdana, sans-serif;
+}
 
+a
+{
+	color: currentColor;
+	text-decoration: none;
+}
+
+.clearfix::after
+{
+	content: '';
+	display: table;
+	clear: both;
+}
 	body
 		{
 			background-color: #f7efeb;
