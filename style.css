@@ -6,7 +6,8 @@ color: #ff0;
 }
 
 #home {
-  background: url("backgroundtest.png") no-repeat fixed; 
+  background: url("backgroundtest.png");
+  background-repeat: none;
 width: 2000px
 }
 
