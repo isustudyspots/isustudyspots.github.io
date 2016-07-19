@@ -1,4 +1,4 @@
-/*body {
+body {
   width: 99vw;
   font-family: Verdana, Arial, sans-serif;
   background-color: #c00;
@@ -78,7 +78,7 @@ a {
   margin: auto;
   text-align: center;
 }
-*//*
+*/
 tr:nth-child(odd) {
   background-color: #ffff00;
   color:black;
@@ -88,7 +88,6 @@ tr:nth-child(odd) {
 tr {
     height:2.5em;
 }
-*/
 body
 {
 	font-family: Lucida Grande, Helvetica Neue, Helvetica, Arial, Verdana, sans-serif;
