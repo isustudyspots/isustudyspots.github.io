@@ -88,3 +88,26 @@ tr:nth-child(odd) {
 tr {
     height:2.5em;
 }
+
+/* test menu*/
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: inline;
+    position: relative;
+}
+
+ul ul {
+    position: absolute;
+    display: none;
+}
+
+li:hover > ul {
+    display: block;
+}
+
+/* end test*/
+
