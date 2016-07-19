@@ -304,41 +304,6 @@ a
 							border-bottom: 1px solid #cc470d;
 						}
 
-
-							#nav > ul > li > ul
-			{
-				height: auto;
-				display: none;
-				position: absolute;
-				left: 0;
-				right: 0;
-			}
-				#nav:target > ul
-				{
-					display: block;
-				}
-				#nav > ul > li
-				{
-					width: 100%;
-					float: none;
-				}
-					#nav > ul > li > a
-					{
-						height: auto;
-						text-align: left;
-						padding: 0 0.833em; /* 20 (24) */
-					}
-						#nav > ul > li:not( :last-child ) > a
-						{
-							border-right: none;
-							border-bottom: 1px solid #cc470d;
-						}
-
-
-				
-				
-				
-				
 				/* second level */
 
 				#nav li ul
