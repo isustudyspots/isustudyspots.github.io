@@ -19,8 +19,12 @@ left:0;
   text-shadow: 2px 2px 5px black;
 }
 
-#menu {
-	position: absolute;
+.floating-menu {
+  z-index: 100;
+position: fixed;
+width: 100%;
+opacity: .9;
+top: 5%;
 }
 
 h1 {
