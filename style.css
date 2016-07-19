@@ -13,13 +13,13 @@ height:1280px;
 }
 
 #header {
-position: absolute;
+position: fixed;
 top:0;
 left:0;
   width: 98%;
   text-shadow: 2px 2px 5px black;
 }
-
+/*
 .floating-menu {
   z-index: 100;
 position: fixed;
@@ -27,7 +27,7 @@ width: 100%;
 opacity: .9;
 top: 5%;
 }
-
+*/
 h1 {
   text-align: center;
 }
