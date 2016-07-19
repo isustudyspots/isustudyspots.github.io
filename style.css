@@ -17,18 +17,7 @@ position: fixed;
   width: 98%;
   text-shadow: 2px 2px 5px black;
 }
-.menuu {
-	position:fixed;
-}
-/*
-.floating-menu {
-  z-index: 100;
-position: fixed;
-width: 100%;
-opacity: .9;
-top: 5%;
-}
-*/
+
 h1 {
   text-align: center;
 }
@@ -245,7 +234,7 @@ background-color: #e15a1f;
 }
 
 
-@media only screen and ( max-width: 200em ) /* 1000 */
+@media only screen and ( max-width: 62em ) /* 1000 */
 {
 #nav
 {
@@ -255,7 +244,7 @@ margin: 0;
 }
 }
 
-@media only screen and ( max-width: 2000px ) /* 640 */
+@media only screen and ( max-width: 40em ) /* 640 */
 {
 html
 {
