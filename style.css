@@ -1,12 +1,13 @@
 body {
-  width: 99vw;
-  font-family: Verdana, Arial, sans-serif;
-  background-color: #c00;
-  color: #ff0;
+width:100%;
+font-family: Verdana, Arial, sans-serif;
+background-color: #c00;
+color: #ff0;
 }
 
 #home {
-  background: url("backgroundtest.png") no-repeat fixed center; 	
+  background: url("backgroundtest.png") no-repeat fixed center; 
+  width: 200vw;
 }
 
 #header {
