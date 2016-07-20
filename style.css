@@ -39,6 +39,13 @@ table{
   text-shadow: 2px 2px 5px black;
 }
 
+#footer{
+z-index: 100;
+position: fixed;
+bottom:0;
+}
+
+
 /* unvisited link 
 a:link {
     color: red;
