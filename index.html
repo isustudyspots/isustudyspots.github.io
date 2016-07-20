@@ -1,75 +1,58 @@
 <!DOCTYPE HTML>
 <html>
-  <head>
-    <title>ISU Study Spots</title>
-    <meta charset="UTF-8">
-     <link rel="stylesheet" href="https://isustudyspots.github.io/style.css">
-     <meta name="viewport" content="width=device-width, initial-scale=.5"/>
-     	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400">
-  </head>
-  
-  <body id="home">
-    <div id="header">
-      <h1>Welcome to ISU Study Spots!</h1>
-    </div>
-   <nav id="nav" role="navigation">
-	<a href="#nav" title="Show navigation">Show navigation</a>
-	<a href="#" title="Hide navigation">Hide navigation</a>
-	<ul class="clearfix">
-		<li>
-			<a href="#" aria-haspopup="true"><span>Agronomy Hall</span></a>
-			<ul>
-				<li><a href="aglounge.html">Agronomy Hall Lounge</a></li>
-			</ul>
-		</li>
-				<li>
-			<a href="#" aria-haspopup="true"><span>Curtiss Hall</span></a>
-			<ul>
-				<li><a href="aglounge.html">Harl Commons</a></li>
+<head>
+   <meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="testytest.css">
+   <title>Test</title>
+
+</head>
+<body>
+<div id="buildings">
+<label for="show-menu" class="show-menu">Buildings</label>
+	<input type="checkbox" id="show-menu" role="button">
+	<ul id="menu">
+		<li><a href="#">Agronomy Hall</a>
+		<ul class="hidden">
+				<li><a href="ag1.html">Second Floor Lounge</a></li>
 			</ul>
 		</li>
 		<li>
-			<a href="#" aria-haspopup="true"><span>Durham Center</span></a>
-			<ul>
-				<li><a href="durhamatrium.html" aria-haspopup="true">Durham Atrium</a>
-				</li>
+			<a href="#">Curtiss Hall &#65516;</a>
+			<ul class="hidden">
+				<li><a href="cur1.html">Harl Commons</a></li>
 			</ul>
 		</li>
 		<li>
-			<a href="#" aria-haspopup="true"><span>Gerdin Business Building</span></a>
-			<ul>
-				<li><a href="aglounge.html">Agronomy Hall Lounge</a></li>
+			<a href="#">Durham Center &#65516;</a>
+			<ul class="hidden">
+				<li><a href="durhamatrium.html">Atrium</a></li>
 			</ul>
 		</li>
-				<li>
-			<a href="#" aria-haspopup="true"><span>LeBaron Hall</span></a>
-			<ul>
-				<li><a href="1230.html">LeBaron 1230</a></li>
+		<li><a href="#">Gerdin Business Building</a>
+					<ul class="hidden">
+				<li><a href="#">Atrium</a></li>
+			</ul>
+		</li>
+		<li><a href="#">LeBaron Hall</a>
+					<ul class="hidden">
+				<li><a href="leb1">Central LeBaron</a></li>
 			</ul>
 		</li>
 	</ul>
-</nav>
-<script src="../jquery.min.js"></script>
-<script src="doubletaptogo.js"></script>
-<script>
-	$( function()
-	{
-		$( '#nav li:has(ul)' ).doubleTapToGo();
-	});
-</script>
+	</div>
+	<div id="header">
+	  <h1>ISU Study Spots</h1>
+	</div>
 
-  <!--  
-<div class="link">
-    <a href="https://goo.gl/maps/jxYf7wvfLMs">Click here to view full screen.</a>
-    <p></p>
+<div id="help">
+<a href="help.html">&diams;Help</a>
+<a href="about.html">&diams;About</a>
 </div>
 
-<img width="600" src="http://maps.googleapis.com/maps/api/staticmap?center=42.027456,+-93.645789&zoom=15&scale=false&size=600x300&maptype=roadmap&format=png&visual_refresh=true&markers=size:tiny%7Ccolor:0xff0000%7Clabel:1%7C42.02769,-93.64962&markers=size:tiny%7Ccolor:0xff0000%7Clabel:1%7C42.02807,-93.64948&markers=size:tiny%7Ccolor:0xff0000%7Clabel:1%7C42.02823	,-93.65048" alt="Google Map of 42.027456, -93.645789">
-  -->
-  <div id="footer">
-  <div class="link">
-  <a href="help.html">HELP</a>
-  </div>
-  </div>
-  </body>
+<img src="backgroundtest.png" alt="Map of ISU campus with buildings numbered alphabetically">
+
+
+</body>
 </html>
