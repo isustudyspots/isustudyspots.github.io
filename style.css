@@ -6,7 +6,6 @@ color: #ff0;
 }
 ul, li {
 	list-style: none;
-	text-decoration: none;
 }
 #home {
 	width 200%;
@@ -114,6 +113,7 @@ tr {
 			#nav > a
 			{
 				display: none;
+				text-decoration: none;
 			}
 
 			#nav li
@@ -124,6 +124,7 @@ tr {
 				{
 					color: #fff;
 					display: block;
+					text-decoration: none;
 				}
 				#nav li a:active
 				{
@@ -285,6 +286,7 @@ tr {
 						height: auto;
 						text-align: left;
 						padding: 0 0.833em; /* 20 (24) */
+						text-decoration: none;
 					}
 						#nav > ul > li:not( :last-child ) > a
 						{
