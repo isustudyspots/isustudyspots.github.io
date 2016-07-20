@@ -195,34 +195,34 @@ margin-left: auto;
 margin-right: auto;
 }
 /* unvisited link */
-a:link {
+#link a:link {
     color: red;
     text-align: center;
       vertical-align: middle;
 }
 
 /* visited link */
-a:visited {
+#link a:visited {
     color: red;
     text-align: center;
       vertical-align: middle;
 }
 
 /* mouse over link */
-a:hover {
+#link a:hover {
     color: blue;
     text-align: center;
       vertical-align: middle;
 }
 
 /* selected link */
-a:active {
+#link a:active {
     color: blue;
       text-align: center;
       vertical-align: middle;
 }
 
-a {
+#link a {
   text-align: center;
   text-decoration: none;
   font-weight: bold;
