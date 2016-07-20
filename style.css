@@ -141,6 +141,7 @@ input[type=checkbox]:checked ~ #menu{
   margin-top:20px;
   position:fixed;
   z-index: 10;
+  width:100%;
 }
 
 #header {
