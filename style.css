@@ -172,3 +172,25 @@ input[type=checkbox]:checked ~ #menu{
   background-color:#ff0;
   opacity: 0.8;
 }
+body {
+  width: 99vw;
+  font-family: Verdana, Arial, sans-serif;
+  background-color: #c00;
+  color: #ff0;
+}
+
+#headerr {
+  width: 98%;
+  text-shadow: 2px 2px 5px black;
+}
+
+#headd {
+  text-align: center;
+}
+
+#photo {
+width: 98%;
+max-width: 480px;
+margin-left: auto;
+margin-right: auto;
+}
