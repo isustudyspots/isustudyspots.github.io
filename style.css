@@ -184,10 +184,12 @@ body {
   text-shadow: 2px 2px 5px black;
 }
 
-#headd {
+#headerr h1 {
   text-align: center;
 }
-
+#photo {
+	width:100%;
+}
 #photo img{
 width: 98%;
 max-width: 480px;
