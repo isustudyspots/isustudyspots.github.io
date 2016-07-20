@@ -169,7 +169,7 @@ input[type=checkbox]:checked ~ #menu{
   text-align:center;
   position: fixed;
   z-index:5;
-  margin-top:90%;
+  margin-top:85vh;
   width:100%;
   background-color:#ff0;
   opacity: 0.8;
