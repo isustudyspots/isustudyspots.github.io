@@ -8,8 +8,10 @@ ul, li {
 	list-style:none;
 }
 #home {
+	width 200%
   background: url("backgroundtest.png");
   background-repeat: no-repeat;
+  background-size: cover;
   font-family: Verdana, Arial, sans-serif;
 }
 
