@@ -1,4 +1,4 @@
-
+/*
 table{
   width:98%;
   font-weight: bold;
@@ -15,7 +15,7 @@ tr:nth-child(odd) {
 tr {
     height:2.5em;
 }
-
+*/
 body {
     font-family: Verdana, Arial, sans-serif;
 }
