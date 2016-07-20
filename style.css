@@ -10,7 +10,6 @@ ul, li {
 #home {
   background: url("backgroundtest.png");
   background-repeat: no-repeat;
-background-size: cover;
   font-family: Verdana, Arial, sans-serif;
 }
 
