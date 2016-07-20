@@ -1,21 +1,20 @@
-/*
-table{
+
+#tables{
   width:98%;
   font-weight: bold;
   border-collapse: collapse;
   text-shadow: 2px 2px 5px black;
 }
 
-tr:nth-child(odd) {
+#tables tr:nth-child(odd) {
   background-color: #ffff00;
   color:black;
    text-shadow: 2px 2px 5px red;
 }
 
-tr {
+#tables tr {
     height:2.5em;
 }
-*/
 body {
     font-family: Verdana, Arial, sans-serif;
 }
