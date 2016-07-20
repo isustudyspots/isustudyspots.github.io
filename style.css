@@ -11,7 +11,7 @@ ul, li {
 	width 200%;
   background: url("backgroundtest.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 1280px 1280px;
   font-family: Verdana, Arial, sans-serif;
 }
 
