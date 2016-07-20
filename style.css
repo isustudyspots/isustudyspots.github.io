@@ -1,36 +1,3 @@
-#body {
-width:100%;
-font-family: Verdana, Arial, sans-serif;
-background-color: #c00;
-color: #ff0;
-}
-ul, li {
-	list-style: none;
-}
-#home {
-	width 200%;
-  background: url("backgroundtest.png");
-  background-repeat: no-repeat;
-  background-size: 1280px 1280px;
-  font-family: Verdana, Arial, sans-serif;
-}
-
-#header {
-position: fixed;
-  width: 98%;
-  text-shadow: 2px 2px 5px black;
-}
-
-h1 {
-  text-align: center;
-}
-
-img {
-width: 98%;
-max-width: 480px;
-margin-left: auto;
-margin-right: auto;
-}
 
 table{
   width:98%;
@@ -39,275 +6,169 @@ table{
   text-shadow: 2px 2px 5px black;
 }
 
-#footer{
-z-index: 100;
-position: fixed;
-bottom:0;
-}
-
-
-/* unvisited link 
-a:link {
-    color: red;
-    text-align: center;
-      vertical-align: middle;
-}
-
-/* visited link 
-a:visited {
-    color: red;
-    text-align: center;
-      vertical-align: middle;
-}
-
-/* mouse over link 
-a:hover {
-    color: blue;
-    text-align: center;
-      vertical-align: middle;
-}
-
-/* selected link 
-a:active {
-    color: blue;
-      text-align: center;
-      vertical-align: middle;
-}
-
-a {
-  text-align: center;
-  text-decoration: none;
-  font-weight: bold;
-    text-shadow:
-   -1px -1px 0 #000,  
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-     1px 1px 0 #000;
-  vertical-align: middle;
-  font-size:2em;
-  
-}
-
-
-#link {
-  width:19em;
-  background-color: yellow;
-  border: 3px solid black;
-  margin: auto;
-  text-align: center;
-}
-*/
 tr:nth-child(odd) {
   background-color: #ffff00;
   color:black;
-    text-shadow: 2px 2px 5px red;
+   text-shadow: 2px 2px 5px red;
 }
 
 tr {
     height:2.5em;
 }
-#nav
-		{
-			width: 60em; /* 1000 */
-			font-family: 'Open Sans', sans-serif;
-			font-weight: 400;
-			position: absolute;
-			top: 25%;
-			left: 50%;
-			margin-left: -30em; /* 30 480 */
-		}
 
-			#nav > a
-			{
-				display: none;
-				text-decoration: none;
-			}
+body {
+    font-family: Verdana, Arial, sans-serif;
+}
+/*Strip the ul of padding and list styling*/
+ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	position: absolute;
+}
 
-			#nav li
-			{
-				position: relative;
-			}
-				#nav li a
-				{
-					color: #fff;
-					display: block;
-					text-decoration: none;
-				}
-				#nav li a:active
-				{
-					background-color: #c00 !important;
-				}
+/*Create a horizontal list with spacing*/
+li {
+	display:inline-block;
+	margin-right: 1px;
+	font-weight: bold;
+}
 
-			#nav span:after
-			{
-				width: 0;
-				height: 0;
-				border: 0.313em solid transparent; /* 5 */
-				border-bottom: none;
-				border-top-color: #efa585;
-				content: '';
-				vertical-align: middle;
-				display: inline-block;
-				position: relative;
-				right: -0.313em; /* 5 */
-			}
+/*Style for menu links*/
+li a {
+	display:block;
+	min-width:140px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #fff;
+	background: #2f3036;
+	text-decoration: none;
+	font-weight: bold;
+}
 
-			/* first level */
+/*Hover state for top level links*/
+li:hover a {
+	background: #c00;
+}
 
-			#nav > ul
-			{
-				height: 3.75em; /* 60 */
-				background-color: #e15a1f;
-			}
-				#nav > ul > li
-				{
-					width: 25%;
-					height: 100%;
-					float: left;
-				}
-					#nav > ul > li > a
-					{
-						height: 100%;
-						font-size: 1.5em; /* 24 */
-						line-height: 2.5em; /* 60 (24) */
-						text-align: center;
-					}
-						#nav > ul > li:not( :last-child ) > a
-						{
-							border-right: 1px solid #cc470d;
-						}
-						#nav > ul > li:hover > a,
-						#nav > ul:not( :hover ) > li.active > a
-						{
-							background-color: #cc470d;
-						}
+/*Style for dropdown links*/
+li:hover ul a {
+	background: #f3f3f3;
+	color: #2f3036;
+	height: 40px;
+	line-height: 40px;
+	font-weight: bold;
+}
 
+/*Hover state for dropdown links*/
+li:hover ul a:hover {
+	background: #111;
+	color: #fff;
+}
 
-				/* second level */
+/*Hide dropdown links until they are needed*/
+li ul {
+	display: none;
+}
 
-				#nav li ul
-				{
-					background-color: #cc470d;
-					display: none;
-					position: absolute;
-					top: 100%;
-				}
-					#nav li:hover ul
-					{
-						display: block;
-						left: 0;
-						right: 0;
-					}
-						#nav li:not( :first-child ):hover ul
-						{
-							left: -1px;
-						}
-						#nav li ul a
-						{
-							font-size: 1.25em; /* 20 */
-							border-top: 1px solid #e15a1f;
-							padding: 0.75em; /* 15 (20) */
-						}
-							#nav li ul li a:hover,
-							#nav li ul:not( :hover ) li.active a
-							{
-								background-color: #e15a1f;
-							}
+/*Make dropdown links vertical*/
+li ul li {
+	display: block;
+	float: none;
+}
+
+/*Prevent text wrapping*/
+li ul li a {
+	width: auto;
+	min-width: 100px;
+	padding: 0 20px;
+}
+
+/*Display the dropdown on hover*/
+ul li a:hover + .hidden, .hidden:hover {
+	display: block;
+}
+
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+	text-decoration: none;
+	color: #ff0;
+	background: #c00;
+	text-align: center;
+	padding: 10px 0;
+	display: none;
+	width:100px;
+	font-weight:bold;
+	text-shadow: 2px 2px 5px black;
+}
+
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+    -webkit-appearance: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
 
 
-		@media only screen and ( max-width: 62.5em ) /* 1000 */
-		{
-			#nav
-			{
-				width: 100%;
-				position: static;
-				margin: 0;
-			}
-		}
+/*Responsive Styles*/
 
-		@media only screen and ( max-width: 200em ) /* 640 */
-		{
-			html
-			{
-				font-size: 75%; /* 12 */
-			}
+@media screen and (max-width : 2000px){
+	/*Make dropdown links appear inline*/
+	ul {
+		position: static;
+		display: none;
+	}
+	/*Create vertical spacing*/
+	li {
+		margin-bottom: 1px;
+	}
+	/*Make all menu links full width*/
+	ul li, li a {
+		width: 100%;
+	}
+	/*Display 'show menu' link*/
+	.show-menu {
+		display:block;
+	}
+}
+#buildings {
+  margin-top:20px;
+  position:fixed;
+  z-index: 10;
+}
 
-			#nav
-			{
-				position: relative;
-				top: auto;
-				left: auto;
-			}
-				#nav > a
-				{
-					width: 3.125em; /* 50 */
-					height: 3.125em; /* 50 */
-					text-align: left;
-					text-indent: -9999px;
-					background-color: #e15a1f;
-					position: relative;
-				}
-					#nav > a:before,
-					#nav > a:after
-					{
-						position: absolute;
-						border: 2px solid #fff;
-						top: 35%;
-						left: 25%;
-						right: 25%;
-						content: '';
-					}
-					#nav > a:after
-					{
-						top: 60%;
-					}
+#header {
+  position:fixed;
+  margin-left: 105px;
+  margin-top:0;
+  text-shadow: 2px 2px 5px black;
 
-				#nav:not( :target ) > a:first-of-type,
-				#nav:target > a:last-of-type
-				{
-					display: block;
-				}
+  color:#c00;
+}
 
+#map {
+  position: absolute;
+  z-index:-1;
+}
 
-			/* first level */
+#help a{
+  text-decoration: none;
+  color: #c00;
+  font-weight: bold;
+}
 
-			#nav > ul
-			{
-				height: auto;
-				display: none;
-				position: absolute;
-				left: 0;
-				right: 0;
-			}
-				#nav:target > ul
-				{
-					display: block;
-				}
-				#nav > ul > li
-				{
-					width: 100%;
-					float: none;
-				}
-					#nav > ul > li > a
-					{
-						height: auto;
-						text-align: left;
-						padding: 0 0.833em; /* 20 (24) */
-						text-decoration: none;
-					}
-						#nav > ul > li:not( :last-child ) > a
-						{
-							border-right: none;
-							border-bottom: 1px solid #cc470d;
-						}
-
-
-				/* second level */
-
-				#nav li ul
-				{
-					position: static;
-					padding: 1.25em; /* 20 */
-					padding-top: 0;
-				}
-		}
+#help {
+  text-align:center;
+  position: fixed;
+  z-index:5;
+  margin-top:90%;
+  width:100%;
+  background-color:#ff0;
+  opacity: 0.8;
+}
