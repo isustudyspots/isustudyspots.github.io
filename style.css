@@ -225,7 +225,7 @@ tr {
 			}
 		}
 
-		@media only screen and ( max-width: 40em ) /* 640 */
+		@media only screen and ( max-width: 200em ) /* 640 */
 		{
 			html
 			{
