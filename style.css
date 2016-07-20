@@ -18,7 +18,6 @@ tr {
 */
 body {
     font-family: Verdana, Arial, sans-serif;
-    width: 100%;
 }
 /*Strip the ul of padding and list styling*/
 ul {
@@ -138,13 +137,12 @@ input[type=checkbox]:checked ~ #menu{
 		display:block;
 	}
 }
-@media only screen and (max-device-width : 730px){
+
 #buildings {
   margin-top:20px;
   position:fixed;
   z-index: 10;
   width:100%;
-}
 }
 #header {
   position:fixed;
