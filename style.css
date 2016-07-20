@@ -18,6 +18,7 @@ tr {
 */
 body {
     font-family: Verdana, Arial, sans-serif;
+    width: 100%;
 }
 /*Strip the ul of padding and list styling*/
 ul {
