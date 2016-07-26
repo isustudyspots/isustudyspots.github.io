@@ -1,58 +1,472 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
+  
 <head>
    <meta charset='utf-8'>
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
    <link rel="stylesheet" href="style.css">
    <title>ISU Study Spots</title>
 
 </head>
 <body>
-<div id="buildings">
-<label for="show-menu" class="show-menu">Buildings</label>
-	<input type="checkbox" id="show-menu" role="button">
-	<ul id="menu">
-		<li><a href="#">1 Agronomy Hall</a>
-		<ul class="hidden">
-				<li><a href="ag1.html">Second Floor Lounge</a></li>
-			</ul>
-		</li>
-		<li>
-			<a href="#">2 Curtiss Hall</a>
-			<ul class="hidden">
-				<li><a href="cur1.html">Harl Commons</a></li>
-			</ul>
-		</li>
-		<li>
-			<a href="#">3 Durham Center</a>
-			<ul class="hidden">
-				<li><a href="durhamatrium.html">Atrium</a></li>
-			</ul>
-		</li>
-		<li><a href="#">4 Gerdin Business Building</a>
-					<ul class="hidden">
-				<li><a href="#">Coming Soon!</a></li>
-			</ul>
-		</li>
-		<li><a href="#">5 LeBaron Hall</a>
-					<ul class="hidden">
-				<li><a href="leb1.html">Southwest Stairwell</a></li>
-			</ul>
-		</li>
-	</ul>
-	</div>
+  <div id="selectb">
+<form method="POST" action="" id="demoForm" class="demoForm" >
+        <select name="category">
+            <option value="a">Building</option>
+            <option value="Agronomy">Agronomy Hall</option>
+            <option value="Armory">Armory</option>
+            <option value="Atanasoff">Atanasoff Hall</option>
+            <option value="Beardshear">Beardshear Hall</option>
+            <option value="Bessey">Bessey Hall</option>
+            <option value="Beyer">Beyer Hall</option>
+            <option value="Black">Black Engineering Building</option>
+            <option value="Biorenewables">Biorenewables Research Lab</option>
+            <option value="Carver">Carver Hall</option>
+            <option value="Catt">Catt Hall</option>
+            <option value="College">College of Design</option>
+            <option value="Communications">Communications Building</option>
+            <option value="Coover">Coover Hall</option>
+            <option value="Curtiss">Curtiss Hall</option>
+            <option value="Durham">Durham Center</option>
+            <option value="East">East Hall</option>
+            <option value="Elings">Elings Hall</option>
+            <option value="Enrollment">Enrollment Services Center</option>
+            <option value="Food">Food Sciences Building</option>
+            <option value="Forker">Forker Building</option>
+            <option value="Frederiksen">Frederiksen Court Community Center</option>
+            <option value="Gerdin">Gerdin Business Building</option>
+            <option value="Gilman">Gilman Hall</option>
+            <option value="Hach">Hach Hall</option>
+            <option value="Hamilton">Hamilton Hall</option>
+            <option value="Heady">Heady Hall</option>
+            <option value="Hixson">Hixson-Lied Student Success Center</option>
+            <option value="Hoover">Hoover Hall</option>
+            <option value="Horticulture">Horticulture Hall</option>
+            <option value="Howe">Howe Hall</option>
+            <option value="Human">Human Nutritional Sciences Building</option>
+            <option value="Insectary">Insectary and Greenhouse</option>
+            <option value="Kildee">Kildee HallKildee Hall</option>
+            <option value="King">King Pavilion (College of Design)</option>
+            <option value="Landscape">Landscape Architecture Building</option>
+            <option value="Lagomarcino">Lagomarcino Hall</option>
+            <option value="LeBaron">LeBaron Hall</option>
+            <option value="Lied">Lied Recreation Athletic Facility</option>
+            <option value="MacKay">MacKay Hall</option>
+            <option value="Maple">Maple-Willow-Larch Commons</option>
+            <option value="Marston">Marston Hall</option>
+            <option value="Memorial">Memorial Union</option>
+            <option value="Molecular">Molecular Biology Building</option>
+            <option value="Morrill">Morrill Hall</option>
+            <option value="Music">Music Hall</option>
+            <option value="National">National Swine Research and Information Center</option>
+            <option value="Palmer">Palmer HDFS Building</option>
+            <option value="Pearson">Pearson Hall</option>
+            <option value="Physics">Physics Hall</option>
+            <option value="Ross">Ross Hall</option>
+            <option value="ScienceI">Science Hall I</option>
+            <option value="ScienceII">Science Hall II</option>
+            <option value="Seed">Seed Science Building</option>
+            <option value="Sloss">Sloss Women's Center</option>
+            <option value="Snedecor">Snedecor Hall</option>
+            <option value="Spedding">Spedding Hall</option>
+            <option value="Sukup">Sukup Hall</option>
+            <option value="Sweeney">Sweeney Hall</option>
+            <option value="Town">Town Engineering Building</option>
+            <option value="Troxel">Troxel Hall</option>
+            <option value="Union">Union Drive Community Center</option>
+            <option value="Wilhelm">Wilhelm Hall</option>
+            <option value="Zaffarano">Zaffarano Physics Addition</option>
+        </select>
+        
+        <select name="choices" id="choices" onChange="document.location = this.value" value="GO" >
+            <!-- populated using JavaScript -->
+        </select>
+</form>
+
+
+
+<script type="text/javascript">
+// object literal holding data for option elements
+var Select_List_Data = {
+    
+    'choices': { // name of associated select box
+        
+        // names match option values in controlling select box
+a: {
+            text: ['Location Name'],
+            value: ['#']
+        },
+Agronomy: {
+            text: ['Location Name', 'Second Flood Lounge', 'Central Hallway'],
+            value: ['#', 'ag1.html', '#']
+        },
+Armory: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+Atanasoff: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+Beardshear: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+Bessey: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+Beyer: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+Black: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+Biorenewables: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+Carver: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+Catt: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+College: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+Communications: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+Coover: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+Curtiss: {
+            text: ['Location Name', 'Harl Commons'],
+            value: ['#', 'cur1.html']
+        },
+Durham: {
+            text: ['Location Name', 'Durham Atrium'],
+            value: ['#', 'durhamatrium.html']
+        },
+East: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+Elings: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+Enrollment: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+Food: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+Forker: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+Frederiksen: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+Gerdin: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+Gilman: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+Hach: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+Hamilton: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+Heady: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+Hixson: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+Hoover: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+Horticulture: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+Howe: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+Human: {
+            text: ['Location Name', 'Southwest Stairwell'],
+            value: ['#', 'leb1.html']
+        },
+Insectary: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+Kildee: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+King: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+Landscape: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+Lagomarcino: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+LeBaron: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+Lied: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+MacKay: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+Maple: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+Marston: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+Memorial: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+Molecular: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+Morrill: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+Music: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+National: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+Palmer: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+Pearson: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+Physics: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+Ross: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+ScienceI: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+ScienceII: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+Seed: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+Sloss: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+Snedecor: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+Spedding: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+Sukup: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+Sweeney: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+Town: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+Troxel: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+Union: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+Wilhelm: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        },
+Zaffarano: {
+            text: ['Location Name', 'No Study Spots Yet!'],
+            value: ['#', '#']
+        }
+    }
+};
+
+// removes all option elements in select box
+// removeGrp (optional) boolean to remove optgroups
+function removeAllOptions(sel, removeGrp) {
+    var len, groups, par;
+    if (removeGrp) {
+        groups = sel.getElementsByTagName('optgroup');
+        len = groups.length;
+        for (var i=len; i; i--) {
+            sel.removeChild( groups[i-1] );
+        }
+    }
+    
+    len = sel.options.length;
+    for (var i=len; i; i--) {
+        par = sel.options[i-1].parentNode;
+        par.removeChild( sel.options[i-1] );
+    }
+}
+
+function appendDataToSelect(sel, obj) {
+    var f = document.createDocumentFragment();
+    var labels = [], group, opts;
+    
+    function addOptions(obj) {
+        var f = document.createDocumentFragment();
+        var o;
+        
+        for (var i=0, len=obj.text.length; i<len; i++) {
+            o = document.createElement('option');
+            o.appendChild( document.createTextNode( obj.text[i] ) );
+            
+            if ( obj.value ) {
+                o.value = obj.value[i];
+            }
+            
+            f.appendChild(o);
+        }
+        return f;
+    }
+    
+    if ( obj.text ) {
+        opts = addOptions(obj);
+        f.appendChild(opts);
+    } else {
+        for ( var prop in obj ) {
+            if ( obj.hasOwnProperty(prop) ) {
+                labels.push(prop);
+            }
+        }
+        
+        for (var i=0, len=labels.length; i<len; i++) {
+            group = document.createElement('optgroup');
+            group.label = labels[i];
+            f.appendChild(group);
+            opts = addOptions(obj[ labels[i] ] );
+            group.appendChild(opts);
+        }
+    }
+    sel.appendChild(f);
+}
+
+// anonymous function assigned to onchange event of controlling select box
+document.forms['demoForm'].elements['category'].onchange = function(e) {
+    // name of associated select box
+    var relName = 'choices';
+    
+    // reference to associated select box
+    var relList = this.form.elements[ relName ];
+    
+    // get data from object literal based on selection in controlling select box (this.value)
+    var obj = Select_List_Data[ relName ][ this.value ];
+    
+    // remove current option elements
+    removeAllOptions(relList, true);
+    
+    // call function to add optgroup/option elements
+    // pass reference to associated select box and data for new options
+    appendDataToSelect(relList, obj);
+};
+
+
+// populate associated select box as page loads
+(function() { // immediate function to avoid globals
+    
+    var form = document.forms['demoForm'];
+    
+    // reference to controlling select box
+    var sel = form.elements['category'];
+    sel.selectedIndex = 0;
+    
+    // name of associated select box
+    var relName = 'choices';
+    // reference to associated select box
+    var rel = form.elements[ relName ];
+    
+    // get data for associated select box passing its name
+    // and value of selected in controlling select box
+    var data = Select_List_Data[ relName ][ sel.value ];
+    
+    // add options to associated select box
+    appendDataToSelect(rel, data);
+    
+}());
+</script>
+</div>
+
 	<div id="header">
 	  <h1>ISU Study Spots</h1>
 	</div>
-
+	
 <div id="help">
 <a href="help.html">&diams;Help</a>
 <a href="about.html">&diams;About</a>
 </div>
 
-<img src="backgroundtest.png" alt="Map of ISU campus with buildings numbered alphabetically">
-
+<iframe id="frame" src="backgroundtest.png" alt="Map of ISU campus with buildings numbered alphabetically"></iframe>
 
 </body>
 </html>
