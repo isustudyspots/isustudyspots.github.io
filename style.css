@@ -16,125 +16,14 @@
     height:2.5em;
 }
 body {
-    font-family: Verdana, Arial, sans-serif;
-}
-/*Strip the ul of padding and list styling*/
-ul {
-	list-style-type:none;
-	margin:0;
-	padding:0;
-	position: absolute;
-}
-
-/*Create a horizontal list with spacing*/
-li {
-	display:inline-block;
-	margin-right: 1px;
-	font-weight: bold;
-}
-
-/*Style for menu links*/
-li a {
-	display:block;
-	min-width:140px;
-	height: 50px;
-	text-align: center;
-	line-height: 50px;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	color: #fff;
-	background: #2f3036;
-	text-decoration: none;
-	font-weight: bold;
-}
-
-/*Hover state for top level links*/
-li:hover a {
-	background: #c00;
-}
-
-/*Style for dropdown links*/
-li:hover ul a {
-	background: #f3f3f3;
-	color: #2f3036;
-	height: 40px;
-	line-height: 40px;
-	font-weight: bold;
-}
-
-/*Hover state for dropdown links*/
-li:hover ul a:hover {
-	background: #111;
-	color: #fff;
-}
-
-/*Hide dropdown links until they are needed*/
-li ul {
-	display: none;
-}
-
-/*Make dropdown links vertical*/
-li ul li {
-	display: block;
-	float: none;
-}
-
-/*Prevent text wrapping*/
-li ul li a {
-	width: auto;
-	min-width: 100px;
-	padding: 0 20px;
-}
-
-/*Display the dropdown on hover*/
-ul li a:hover + .hidden, .hidden:hover {
-	display: block;
-}
-
-/*Style 'show menu' label button and hide it by default*/
-.show-menu {
-	text-decoration: none;
-	color: #ff0;
-	background: #c00;
-	text-align: center;
-	padding: 10px 0;
-	display: none;
-	width:100px;
-	font-weight:bold;
-	text-shadow: 2px 2px 5px black;
-}
-
-/*Hide checkbox*/
-input[type=checkbox]{
-    display: none;
-    -webkit-appearance: none;
-}
-
-/*Show menu when invisible checkbox is checked*/
-input[type=checkbox]:checked ~ #menu{
-    display: block;
+  font-family: Verdana, Arial, sans-serif;
+  background-color: #c00;
 }
 
 
-/*Responsive Styles*/
-
-@media screen and (max-width : 2000px){
-	/*Make dropdown links appear inline*/
-	ul {
-		position: static;
-		display: none;
-	}
-	/*Create vertical spacing*/
-	li {
-		margin-bottom: 1px;
-	}
-	/*Make all menu links full width*/
-	ul li, li a {
-		width: 100%;
-	}
-	/*Display 'show menu' link*/
-	.show-menu {
-		display:block;
-	}
+html {
+  height:100%;
+  width: 100%;
 }
 
 #buildings {
@@ -145,16 +34,14 @@ input[type=checkbox]:checked ~ #menu{
 }
 #header {
   position:fixed;
-  margin-left: 105px;
-  margin-top:0;
+  margin: auto;
   text-shadow: 2px 2px 5px black;
-
   color:#c00;
-}
-
-#map {
-  position: absolute;
-  z-index:-1;
+  clear: left;
+  z-index: 9;
+  width: 100%;
+  text-align: center;
+  padding-top:10px;
 }
 
 #help a{
@@ -184,17 +71,17 @@ input[type=checkbox]:checked ~ #menu{
   text-shadow: 2px 2px 5px black;
 }
 
-#headerr h1 {
+h1 {
   text-align: center;
 }
-#photo {
-	width:100%;
-}
+
+
 #photo img{
-width: 98%;
-max-width: 480px;
-margin-left: auto;
-margin-right: auto;
+  display: block;
+  width:98%;
+  max-width:500px;
+  margin:auto;
+  text-align: center;
 }
 /* unvisited link */
 #link a:link {
@@ -229,7 +116,7 @@ margin-right: auto;
   text-decoration: none;
   font-weight: bold;
     text-shadow:
-   -1px -1px 0 #000,  
+   -1px -1px 0 #000,
     1px -1px 0 #000,
     -1px 1px 0 #000,
      1px 1px 0 #000;
@@ -251,4 +138,42 @@ a {
 text-decoration:none;
 color: yellow;
 font-weight: bold;
+}
+
+#selectb {
+  width:98%;
+  position: fixed;
+  z-index: 10;
+  display:block;
+  margin:auto;
+}
+
+#selecta {
+  display:block;
+  margin:auto;
+}
+
+select {
+  width: 45%;
+  height: 2em;
+  font-weight: bold;
+  color:Yellow;
+  background-color: #c00;
+  text-shadow: 2px 2px 5px black;
+}
+
+option {
+  font-weight: bold;
+  color:Yellow;
+  background-color: #c00;
+  text-shadow: 2px 2px 5px black;
+}
+
+#frame {
+  width: 98vw;
+  height:99vh;
+  display: block;
+  margin: auto;
+  max-width: 1280px;
+  max-height: 1280px;
 }
