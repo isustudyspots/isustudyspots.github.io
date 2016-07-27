@@ -193,4 +193,6 @@ z-index:-1;
 #container {
 position: absolute;
 z-index: 10;
+top:0;
+left: 0;
 }
