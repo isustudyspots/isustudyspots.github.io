@@ -454,7 +454,39 @@ document.forms['demoForm'].elements['category'].onchange = function(e) {
     // add options to associated select box
     appendDataToSelect(rel, data);
     
-}());
+}
+
+function init() {
+
+		var xScroll=1740 - window.innerWidth/2;
+
+		var yScroll=2050 - window.innerHeight/2;
+
+		window.scrollTo(xScroll,yScroll);
+
+		navigator.geolocation.getCurrentPosition(handler);
+
+	}
+
+	// Move menu when window is scrolled
+
+	window.onscroll = function updateMenuLocation() {
+
+		var sX = window.pageXOffset;
+
+		var sY = window.pageYOffset;
+
+		document.getElementById("container").style.left=sX + "px";
+
+		document.getElementById("container").style.top=sY + "px";
+
+		document.getElementById("demoForm").style.fontSize=Math.round(window.innerHeight*0.015) + "px";
+
+		//document.getElementById("buildingSel").style.height=Math.round(window.innerHeight*0.03) + "px";
+
+	}
+
+());
 </script>
 </div>
 
@@ -463,8 +495,10 @@ document.forms['demoForm'].elements['category'].onchange = function(e) {
 	</div>
 	</div>
 <div id="help">
+<div id="space">
 <a href="help.html">Help&nearr;</a>
 <a href="about.html">About&nearr;</a>
+</div>
 </div>
 <img id="map" src="backgroundtest.png" alt="Map of ISU campus with buildings numbered alphabetically" height="1280" width="1280">
 <!-- iframe id="frame" src="backgroundtest.png" alt="Map of ISU campus with buildings numbered alphabetically"></iframe> -->
