@@ -191,6 +191,6 @@ z-index:-1;
 }
 
 #container {
-position: fixed;
+position: absolute;
 z-index: 10;
 }
