@@ -144,17 +144,11 @@ font-weight: bold;
   width:98%;
   position: fixed;
   z-index: 10;
-  display:block;
-  margin:auto;
-}
-
-#selecta {
-  display:block;
-  margin:auto;
+float:left;
 }
 
 select {
-  width: 45%;
+  width: 150px;
   height: 2em;
   font-weight: bold;
   color:Yellow;
@@ -170,8 +164,8 @@ option {
 }
 
 #frame {
-  width: 98vw;
-  height:99vh;
+  width: 100%;
+  height:100%;
   display: block;
   margin: auto;
   max-width: 1280px;
