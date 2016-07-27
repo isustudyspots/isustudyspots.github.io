@@ -192,4 +192,5 @@ z-index:-1;
 #container {
 position: fixed;
 z-index: 10;
+-webkit-transform: translateZ(0);
 }
