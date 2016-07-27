@@ -2,13 +2,14 @@
 <html lang="en">
   
 <head>
-   <meta charset='utf-8'>
+   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
    <link rel="stylesheet" href="style.css">
    <title>ISU Study Spots</title>
 
 </head>
 <body>
+<div id="container">
   <div id="selectb">
 <form method="POST" action="" id="demoForm" class="demoForm" >
         <select name="category">
@@ -460,13 +461,15 @@ document.forms['demoForm'].elements['category'].onchange = function(e) {
 	<div id="header">
 	  <h1>ISU Study Spots</h1>
 	</div>
-	
+	</div>
 <div id="help">
-<a href="help.html">&diams;Help</a>
-<a href="about.html">&diams;About</a>
+<div id="space">
+<a href="help.html">Help&nearr;</a>
+<a href="about.html">About&nearr;</a>
 </div>
-
-<iframe id="frame" src="backgroundtest.png" alt="Map of ISU campus with buildings numbered alphabetically"></iframe>
+</div>
+<img id="map" src="backgroundtest.png" alt="Map of ISU campus with buildings numbered alphabetically" height="1280" width="1280">
+<!-- iframe id="frame" src="backgroundtest.png" alt="Map of ISU campus with buildings numbered alphabetically"></iframe> -->
 
 </body>
 </html>
