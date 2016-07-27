@@ -1,4 +1,8 @@
 
+@charset "UTF-8";
+/* CSS Document */
+
+
 #tables{
   width:98%;
   font-weight: bold;
@@ -17,13 +21,6 @@
 }
 body {
   font-family: Verdana, Arial, sans-serif;
-  background-color: #c00;
-}
-
-
-html {
-  height:100%;
-  width: 100%;
 }
 
 #buildings {
@@ -32,40 +29,48 @@ html {
   z-index: 10;
   width:100%;
 }
+
+/*style of the homepage header*/
 #header {
-  position:fixed;
-  margin: auto;
-  text-shadow: 2px 2px 5px black;
-  color:#c00;
-  clear: left;
-  z-index: 9;
-  width: 100%;
-  text-align: center;
-  padding-top:10px;
+	display: block;
+	text-shadow: 2px 2px 5px black;
+	color: #c00;
+	float: left;
+	clear:both;
+	text-align: center;
+	background-color: yellow;
+	opacity: 0.7;
+	width: 315px;
 }
 
+/*style of the "help" and "about" links*/
 #help a{
-  text-decoration: none;
   color: #c00;
   font-weight: bold;
 }
 
 #help {
-  text-align:center;
-  position: fixed;
-  z-index:5;
-  margin-top:85vh;
-  width:100%;
-  background-color:#ff0;
-  opacity: 0.8;
+	display: block;
+	position: fixed;
+	text-shadow: 2px 2px 5px black;
+	color: #c00;
+	float: left;
+	z-index: 9;
+	text-align: center;
+	background-color: yellow;
+	opacity: 0.7;
+	width: 100%;
+	bottom: 0;
 }
+
 #bod {
-  width: 99vw;
+	display:block;
   font-family: Verdana, Arial, sans-serif;
-  background-color: #c00;
   color: #ff0;
 }
 
+
+/*style of the headers on all but the homepage*/
 #headerr {
   width: 98%;
   text-shadow: 2px 2px 5px black;
@@ -83,6 +88,8 @@ h1 {
   margin:auto;
   text-align: center;
 }
+
+/*style of the "Directions" link*/
 /* unvisited link */
 #link a:link {
     color: red;
@@ -111,6 +118,7 @@ h1 {
       vertical-align: middle;
 }
 
+/*style of the "Directions" link*/
 #link a {
   text-align: center;
   text-decoration: none;
@@ -125,7 +133,7 @@ h1 {
   
 }
 
-
+/*style of the "Directions" link*/
 #link {
   width:19em;
   background-color: yellow;
@@ -134,19 +142,21 @@ h1 {
   text-align: center;
 }
 
+/*style of the "back to map" link*/
 a {
 text-decoration:none;
 color: yellow;
 font-weight: bold;
 }
 
+/*Div around the menu form*/
 #selectb {
-  width:98%;
-  position: fixed;
-  z-index: 10;
-float:left;
+	float: left;
+	overflow:auto;
+	clear:both;
 }
 
+/*style of the menu form*/
 select {
   width: 150px;
   height: 2em;
@@ -154,8 +164,10 @@ select {
   color:Yellow;
   background-color: #c00;
   text-shadow: 2px 2px 5px black;
+  clear: both;
 }
 
+/*style of the option within the menu form*/
 option {
   font-weight: bold;
   color:Yellow;
@@ -163,6 +175,7 @@ option {
   text-shadow: 2px 2px 5px black;
 }
 
+/*style of the map iframe*/
 #frame {
   width: 100vw;
   height:100vh;
@@ -170,4 +183,14 @@ option {
   margin: auto;
   max-width: 1280px;
   max-height: 1280px;
+}
+
+#map {
+display:block;
+z-index:-1;
+}
+
+#container {
+position: fixed;
+z-index: 10;
 }
