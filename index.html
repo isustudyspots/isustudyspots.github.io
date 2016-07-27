@@ -455,32 +455,6 @@ document.forms['demoForm'].elements['category'].onchange = function(e) {
     appendDataToSelect(rel, data);
     
 }
-
-function init() {
-
-		var xScroll=1740 - window.innerWidth/2;
-
-		var yScroll=2050 - window.innerHeight/2;
-
-		window.scrollTo(xScroll,yScroll);
-
-		navigator.geolocation.getCurrentPosition(handler);
-
-	}
-
-	// Move menu when window is scrolled
-
-	window.onscroll = function updateMenuLocation() {
-
-		var sX = window.pageXOffset;
-
-		var sY = window.pageYOffset;
-
-		document.getElementById("container").style.left=sX + "px";
-
-		document.getElementById("container").style.top=sY + "px";
-	}
-
 ());
 </script>
 </div>
