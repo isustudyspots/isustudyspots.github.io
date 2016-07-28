@@ -3,6 +3,9 @@
 area {
 	border: 1px dotted #c00;
 }
+map {
+	border: 1px dotted #c00;	
+}
 
 #tables{
   width:98%;
