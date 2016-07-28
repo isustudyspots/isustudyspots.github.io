@@ -469,6 +469,187 @@ document.forms['demoForm'].elements['category'].onchange = function(e) {
 <a href="about.html">About&nearr;</a>
 </div>
 </div>
+
+    <div id="map"></div>
+    <script>
+      function initMap()
+	  {
+	  //Map coordinates
+	  
+        var myLatLng = {lat: 42.026567, lng: -93.646442};
+		var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: myLatLng
+        });
+		//NW corner 42.031491, -93.654554
+		//SE corner 42.022729, -93.633881
+		var campusOverlay;
+		var imageBounds = {
+			north:42.031490,
+			south:42.022729,
+			east:-93.633881,
+			west:-93.654554
+		};
+		campusOverlay = new google.maps.GroundOverlay('mapnomarkers.phg', imageBounds);
+		campusOverlay.setMap(map);
+		
+		
+//Dragging control start
+		var allowedBounds = new google.maps.LatLngBounds(
+     	new google.maps.LatLng(42.031491, -93.654554),
+     	new google.maps.LatLng(42.022729, -93.633881)
+		);
+		var lastValidCenter = map.getCenter();
+
+		google.maps.event.addListener(map, 'center_changed', function() {
+    	if (allowedBounds.contains(map.getCenter())) {
+        	// still within valid bounds, so save the last valid position
+        	lastValidCenter = map.getCenter();
+        	return;
+    	}
+
+    	// not valid anymore => return to last valid position
+    	map.panTo(lastValidCenter);
+	});
+
+//Dragging control end
+		
+		
+	//Variables for the map locations
+		var pos1 = {lat: 42.02539, lng: -93.64839}; //Carver Student Lounge
+		var pos2 = {lat: 42.02859, lng: -93.64759}; //LeBaron Computer Lab
+		var pos3 = {lat: 42.02843, lng: -93.64654}; //MacKay S Foyer
+		var pos4 = {lat: 42.02758, lng: -93.64993}; //Durham Foyer
+		var pos5 = {lat: 42.02769, lng: -93.64962}; //Durham Atrium
+		var pos6 = {lat: 42.026154, lng: -93.644538}; //Harl Commons
+
+	//Markers
+        var marker1 = new google.maps.Marker({
+          position: pos1,
+          map: map,
+          title: 'Carver Student Lounge'
+        });
+		var marker2 = new google.maps.Marker({
+          position: pos2,
+          map: map,
+          title: 'LeBaron Computer Lab'
+        });
+		var marker3 = new google.maps.Marker({
+          position: pos3,
+          map: map,
+          title: 'MacKay S Foyer'
+        });
+		var marker4 = new google.maps.Marker({
+          position: pos4,
+          map: map,
+          title: 'Durham Foyer'
+        });
+		var marker5 = new google.maps.Marker({
+          position: pos5,
+          map: map,
+          title: 'Durham Atrium'
+        });
+		var marker6 = new google.maps.Marker({
+          position: pos6,
+          map: map,
+          title: 'Harl Commons'
+        });
+	  
+	//InfoView content
+		var contentString1 = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">Carver Student Lounge</h1>'+
+            '<div id="bodyContent">'+
+            '<p><img width=250 src="http://i1249.photobucket.com/albums/hh517/sacoffey17/Carver%20Student%20Lounge_zpsj4t3tcxi.jpg"><br>'+
+			'<br><b>Floor</b> 1 <br><b>Capacity</b> 30<br><b>Hours: </b> <a href = "https://www.fpm.iastate.edu/maps/buildings/building.asp?id=20">External Link</a><br><b>More Info: </b>Link coming soon!'+
+			'</p>'+
+            '</div>'+
+            '</div>';
+		var contentString2 = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">LeBaron Computer Lab</h1>'+
+            '<div id="bodyContent">'+
+            '<p><img width=250 src="http://i1249.photobucket.com/albums/hh517/sacoffey17/LeBaron%20Computer%20Lounge_zpsbklqmwjm.jpg"><br>'+
+			'<br><b>Floor</b> 1 <br><b>Capacity</b> 23<br><b>Hours: </b> <a href ="https://www.fpm.iastate.edu/maps/buildings/building.asp?id=76">External Link</a><br><b>More Info: </b>Link coming soon!'+
+			'</p>'+
+            '</div>'+
+            '</div>';
+		var contentString3 = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">MacKay S Foyer</h1>'+
+            '<div id="bodyContent">'+
+            '<p><img width=250 src="http://i1249.photobucket.com/albums/hh517/sacoffey17/MacKay%20S%20Foyer_zpsxknrawe0.jpg"><br>'+
+			'<br><b>Floor</b> 1 <br><b>Capacity</b> 16<br><b>Hours: </b> <a href = "https://www.fpm.iastate.edu/maps/buildings/building.asp?id=83">External Link</a><br><b>More Info: </b>Link coming soon!'+
+			'</p>'+
+            '</div>'+
+            '</div>';
+		var contentString4 = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">Durham Foyer</h1>'+
+            '<div id="bodyContent">'+
+            '<p><img width=250 src="http://i1249.photobucket.com/albums/hh517/sacoffey17/Durham%20Foyer_zpsse36gzou.jpg"><br>'+
+			'<br><b>Floor</b> 1 <br><b>Capacity</b> 20<br><b>Hours: </b> <a href = "https://www.fpm.iastate.edu/maps/buildings/building.asp?id=32">External Link</a><br><b>More Info: </b>Link coming soon!'+
+			'</p>'+
+            '</div>'+
+            '</div>';
+		var contentString5 = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">Durham Atrium</h1>'+
+            '<div id="bodyContent">'+
+            '<p><img width=250 src=http://i1249.photobucket.com/albums/hh517/sacoffey17/Durhum%20Atrium_zps4f7z4hwx.jpg><br>'+
+			'<br><b>Floor</b> 3 <br><b>Capacity</b> 15<br><b>Hours: </b> <a href = "https://www.fpm.iastate.edu/maps/buildings/building.asp?id=32">External Link</a><br><a href="https://isustudyspots.github.io/durhamatrium.html"><b>More info</b> </a>'+
+			'</p>'+
+            '</div>'+
+            '</div>';
+		var contentString6 = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">Harl Commons</h1>'+
+            '<div id="bodyContent">'+
+            '<p><img width=250 src=><br>'+ //Link needed for Harl Commons photo
+			'<br><b>Floor</b> B <br><b>Capacity</b> 45<br><b>Hours: </b> <a href = "https://www.fpm.iastate.edu/maps/buildings/building.asp?id=27">External Link</a><br><a href="https://isustudyspots.github.io/cur1.html"><b>More info</b> </a>'+
+			'</p>'+
+            '</div>'+
+            '</div>';
+			
+		//InfoView functions
+			var infowindow1 = new google.maps.InfoWindow({content: contentString1});
+			marker1.addListener('click', function() {
+          infowindow1.open(map, marker1);
+        });
+		var infowindow2 = new google.maps.InfoWindow({content: contentString2});
+			marker2.addListener('click', function() {
+          infowindow2.open(map, marker2);
+        });
+		var infowindow3 = new google.maps.InfoWindow({content: contentString3});
+			marker3.addListener('click', function() {
+          infowindow3.open(map, marker3);
+        });
+		var infowindow4 = new google.maps.InfoWindow({content: contentString4});
+			marker4.addListener('click', function() {
+          infowindow4.open(map, marker4);
+        });
+		var infowindow5 = new google.maps.InfoWindow({content: contentString5});
+			marker5.addListener('click', function() {
+          infowindow5.open(map, marker5);
+        });
+		var infowindow6 = new google.maps.InfoWindow({content: contentString6});
+			marker6.addListener('click', function() {
+          infowindow6.open(map, marker6);
+        });
+		
+      }
+	  
+	  
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBfbNWqmGRtWdstbwb3TH_kecR0BXi2bE&callback=initMap"
+    async defer></script>
+<!--
 <img id="Image-Maps-Com-campusmap" src="https://isustudyspots.github.io/backmapnew.png" border="0" width="2500" height="1457" orgWidth="2500" orgHeight="1457" usemap="#campusmap" alt="" />
 <map name="campusmap" id="ImageMapsCom-campusmap">
 <area  alt="Link to Town Engineering page" title="Town Engineering" href="town.html" shape="rect" coords="185,318,288,368" style="outline:none;" target="_self"     />
@@ -529,7 +710,7 @@ document.forms['demoForm'].elements['category'].onchange = function(e) {
 <area  alt="" title="" href="troxel.html" shape="rect" coords="1250,590,1315,646" style="outline:none;" target="_self"     />
 <area  alt="" title="" href="zaff.html" shape="rect" coords="837,259,936,315" style="outline:none;" target="_self"     />
 <area shape="rect" coords="2498,1455,2500,1457" alt="Image Map" style="outline:none;" title="Image Map" href="http://www.image-maps.com/index.php?aff=mapped_users_0" />
-</map>
+</map>-->
 
 <!-- <img id="map" src="backmapnew.png" alt="Map of ISU campus with buildings numbered alphabetically" height="1480" width="2538">
 <iframe id="frame" src="backmapnew.png" alt="Map of ISU campus with buildings numbered alphabetically"></iframe> -->
