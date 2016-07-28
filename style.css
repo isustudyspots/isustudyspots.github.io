@@ -1,6 +1,8 @@
 @charset "UTF-8";
 /* CSS Document */
-
+area {
+	border: 1px dotted #c00;
+}
 
 #tables{
   width:98%;
