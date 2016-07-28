@@ -1,11 +1,5 @@
 @charset "UTF-8";
 /* CSS Document */
-area {
-	border: 1px dotted #c00;
-}
-map {
-	border: 1px dotted #c00;	
-}
 
 #tables{
   width:98%;
@@ -195,8 +189,7 @@ option {
 }
 
 #map {
-display:block;
-z-index:-1;
+height:100%;
 }
 
 #container {
