@@ -493,26 +493,7 @@ document.forms['demoForm'].elements['category'].onchange = function(e) {
 		campusOverlay = new google.maps.GroundOverlay('mapnomarkers.png', imageBounds);
 		campusOverlay.setMap(map);
 		
-		
-//Dragging control start
-		var allowedBounds = new google.maps.LatLngBounds(
-     	new google.maps.LatLng(42.031491, -93.654554),
-     	new google.maps.LatLng(42.022729, -93.633881)
-		);
-		var lastValidCenter = map.getCenter();
 
-		google.maps.event.addListener(map, 'center_changed', function() {
-    	if (allowedBounds.contains(map.getCenter())) {
-        	// still within valid bounds, so save the last valid position
-        	lastValidCenter = map.getCenter();
-        	return;
-    	}
-
-    	// not valid anymore => return to last valid position
-    	map.panTo(lastValidCenter);
-	});
-
-//Dragging control end
 		
 		
 	//Variables for the map locations
