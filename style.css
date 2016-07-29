@@ -156,11 +156,7 @@ font-weight: bold;
 }
 
 /*Div around the menu form*/
-#selectb {
-	display:block;
-	margin: auto;
-	clear:both;
-}
+
 
 /*style of the menu form*/
 select {
