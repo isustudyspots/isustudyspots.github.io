@@ -161,8 +161,7 @@ font-weight: bold;
 /*style of the menu form*/
 select {
   width: 49%;
-  display:block;
-margin:auto;
+  margin:auto;
   height: 2.5em;
   font-weight: bold;
   color:Yellow;
