@@ -151,9 +151,9 @@ h2 {
 
 /*style of the "back to map" link*/
 a {
-color: Black;
+color: yellow;
 font-weight: bold;
-background-color: white;
+background-color: #c00;
 }
 
 /*Div around the menu form*/
