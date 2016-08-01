@@ -49,6 +49,7 @@ body {
 #help a{
   color: #c00;
   font-weight: bold;
+  background-color: none;
 }
 
 #help {
