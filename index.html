@@ -514,20 +514,42 @@ document.forms['demoForm'].elements['category'].onchange = function(e) {
 	var icon='icon.png';
        //Lat-Lng not input - Skipped
 
-  var pos3 = {lat: 42.03944, lng: -91.935};
-var marker3 = new google.maps.Marker({
+var pos2 = {lat: 42.028449, lng: -93.643046};
+  var marker2 = new google.maps.Marker({
+  position: pos2,
+  map: map,
+  icon: icon,
+  title: ''
+  });
+var contentString2 = '<div id="content">'+
+  '<div id="siteNotice">'+
+  '</div>'+
+  '<h1 id="bodyContent">'+
+  '<div id = "bodyContent">'+
+  '<p>Ag Courtyard<br><img width=250 src = "Agr1.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.028449,+-93.643046/@42.028449,-93.643046,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=5">Hours</a><br><a href = "https://isustudyspots.github.io/Agronomy.html#Agr1">More info</a>'+
+  '</p>'+
+  '</div>'+
+  '</div>;'
+ var infoWindow2 = new google.maps.InfoWindow({content: contentString2});
+      marker2.addListener('click',function() {
+      infoWindow2.open(map, marker2);
+  });
+
+var pos3 = {lat: 42.03944, lng: -91.935};
+  var marker3 = new google.maps.Marker({
   position: pos3,
   map: map,
   icon: icon,
-  title: 'Ag Nooks'
-});
+  title: ''
+  });
 var contentString3 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "5.jpg"><br>'+
- '<br><b>Floor: </b>1, 2, 3<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=5">External Link</a><br><a href = "https://isustudyspots.github.io/Agronomy.html#Agr2<b>More info</b> </a>'+
+  '<p>Ag Nooks<br><img width=250 src = "Agr2.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.03944,+-91.935/@42.03944,-91.935,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=5">Hours</a><br><a href = "https://isustudyspots.github.io/Agronomy.html#Agr2">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -536,20 +558,20 @@ var contentString3 = '<div id="content">'+
       infoWindow3.open(map, marker3);
   });
 
-  var pos4 = {lat: 42.028532, lng: -93.643105};
-var marker4 = new google.maps.Marker({
+var pos4 = {lat: 42.028532, lng: -93.643105};
+  var marker4 = new google.maps.Marker({
   position: pos4,
   map: map,
   icon: icon,
-  title: 'Agronomy Hallway by 1126'
-});
+  title: ''
+  });
 var contentString4 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "5.jpg"><br>'+
- '<br><b>Floor: </b>1<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=5">External Link</a><br><a href = "https://isustudyspots.github.io/Agronomy.html#Agr3<b>More info</b> </a>'+
+  '<p>Agronomy Hallway by 1126<br><img width=250 src = "Agr3.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.028532,+-93.643105/@42.028532,-93.643105,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=5">Hours</a><br><a href = "https://isustudyspots.github.io/Agronomy.html#Agr3">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -558,20 +580,20 @@ var contentString4 = '<div id="content">'+
       infoWindow4.open(map, marker4);
   });
 
-  var pos5 = {lat: 42.028523, lng: -93.643119};
-var marker5 = new google.maps.Marker({
+var pos5 = {lat: 42.028523, lng: -93.643119};
+  var marker5 = new google.maps.Marker({
   position: pos5,
   map: map,
   icon: icon,
-  title: 'Agronomy 2103 Lounge + Hallway'
-});
+  title: ''
+  });
 var contentString5 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "5.jpg"><br>'+
- '<br><b>Floor: </b>2<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=5">External Link</a><br><a href = "https://isustudyspots.github.io/Agronomy.html#Agr4<b>More info</b> </a>'+
+  '<p>Agronomy 2103 Lounge + Hallway<br><img width=250 src = "Agr4.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.028523,+-93.643119/@42.028523,-93.643119,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=5">Hours</a><br><a href = "https://isustudyspots.github.io/Agronomy.html#Agr4">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -580,20 +602,20 @@ var contentString5 = '<div id="content">'+
       infoWindow5.open(map, marker5);
   });
 
-  var pos6 = {lat: 42.03944, lng: -91.93472};
-var marker6 = new google.maps.Marker({
+var pos6 = {lat: 42.03944, lng: -91.93472};
+  var marker6 = new google.maps.Marker({
   position: pos6,
   map: map,
   icon: icon,
-  title: 'Agronomy 2nd floor nook'
-});
+  title: ''
+  });
 var contentString6 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "5.jpg"><br>'+
- '<br><b>Floor: </b>2<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=5">External Link</a><br><a href = "https://isustudyspots.github.io/Agronomy.html#Agr5<b>More info</b> </a>'+
+  '<p>Agronomy 2nd floor nook<br><img width=250 src = "Agr5.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.03944,+-91.93472/@42.03944,-91.93472,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=5">Hours</a><br><a href = "https://isustudyspots.github.io/Agronomy.html#Agr5">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -602,20 +624,20 @@ var contentString6 = '<div id="content">'+
       infoWindow6.open(map, marker6);
   });
 
-  var pos7 = {lat: 42.02807, lng: -93.64948};
-var marker7 = new google.maps.Marker({
+var pos7 = {lat: 42.02807, lng: -93.6495};
+  var marker7 = new google.maps.Marker({
   position: pos7,
   map: map,
   icon: icon,
-  title: 'Atanasoff SE Stairwell'
-});
+  title: ''
+  });
 var contentString7 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "11.jpg"><br>'+
- '<br><b>Floor: </b>2<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=11">External Link</a><br><a href = "https://isustudyspots.github.io/Atanasoff.html#Ata1<b>More info</b> </a>'+
+  '<p>Atanasoff SE Stairwell<br><img width=250 src = "Ata1.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.02807,+-93.6495/@42.02807,-93.6495,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=11">Hours</a><br><a href = "https://isustudyspots.github.io/Atanasoff.html#Ata1">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -624,20 +646,20 @@ var contentString7 = '<div id="content">'+
       infoWindow7.open(map, marker7);
   });
 
-  var pos8 = {lat: 42.02808, lng: -93.64999};
-var marker8 = new google.maps.Marker({
+var pos8 = {lat: 42.02808, lng: -93.65};
+  var marker8 = new google.maps.Marker({
   position: pos8,
   map: map,
   icon: icon,
-  title: 'Atanasoff SW Stairwell'
-});
+  title: ''
+  });
 var contentString8 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "11.jpg"><br>'+
- '<br><b>Floor: </b>2<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=11">External Link</a><br><a href = "https://isustudyspots.github.io/Atanasoff.html#Ata2<b>More info</b> </a>'+
+  '<p>Atanasoff SW Stairwell<br><img width=250 src = "Ata2.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.02808,+-93.65/@42.02808,-93.65,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=11">Hours</a><br><a href = "https://isustudyspots.github.io/Atanasoff.html#Ata2">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -646,20 +668,20 @@ var contentString8 = '<div id="content">'+
       infoWindow8.open(map, marker8);
   });
 
-  var pos9 = {lat: 42.02613, lng: -93.64843};
-var marker9 = new google.maps.Marker({
+var pos9 = {lat: 42.02613, lng: -93.6484};
+  var marker9 = new google.maps.Marker({
   position: pos9,
   map: map,
   icon: icon,
-  title: 'Beardshear Foyer'
-});
+  title: ''
+  });
 var contentString9 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "13.jpg"><br>'+
- '<br><b>Floor: </b>1<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=13">External Link</a><br><a href = "https://isustudyspots.github.io/Beardshear.html#Bea1<b>More info</b> </a>'+
+  '<p>Beardshear Foyer<br><img width=250 src = "Bea1.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.02613,+-93.6484/@42.02613,-93.6484,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=13">Hours</a><br><a href = "https://isustudyspots.github.io/Beardshear.html#Bea1">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -668,20 +690,20 @@ var contentString9 = '<div id="content">'+
       infoWindow9.open(map, marker9);
   });
 
-  var pos10 = {lat: 42.025212, lng: -93.644609};
-var marker10 = new google.maps.Marker({
+var pos10 = {lat: 42.026268, lng: -93.650895};
+  var marker10 = new google.maps.Marker({
   position: pos10,
   map: map,
   icon: icon,
-  title: 'Bergstrom Commons'
-});
+  title: ''
+  });
 var contentString10 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "164.jpg"><br>'+
- '<br><b>Floor: </b>1<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=164">External Link</a><br><a href = "https://isustudyspots.github.io/Black.html#Bla1<b>More info</b> </a>'+
+  '<p>Black Basement Hallway<br><img width=250 src = "bla1.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.026268,+-93.650895/@42.026268,-93.650895,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=17">Hours</a><br><a href = "https://isustudyspots.github.io/Black.html#bla1">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -690,20 +712,20 @@ var contentString10 = '<div id="content">'+
       infoWindow10.open(map, marker10);
   });
 
-  var pos11 = {lat: 42.025995, lng: -93.651374};
-var marker11 = new google.maps.Marker({
+var pos11 = {lat: 42.026, lng: -93.6514};
+  var marker11 = new google.maps.Marker({
   position: pos11,
   map: map,
   icon: icon,
-  title: 'Black Central Hallway'
-});
+  title: ''
+  });
 var contentString11 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "17.jpg"><br>'+
- '<br><b>Floor: </b>1<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=17">External Link</a><br><a href = "https://isustudyspots.github.io/Black.html#Bla2<b>More info</b> </a>'+
+  '<p>Black Central Hallway<br><img width=250 src = "Bla2.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.026,+-93.6514/@42.026,-93.6514,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=17">Hours</a><br><a href = "https://isustudyspots.github.io/Black.html#Bla2">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -712,20 +734,20 @@ var contentString11 = '<div id="content">'+
       infoWindow11.open(map, marker11);
   });
 
-  var pos12 = {lat: 42.026187, lng: -93.650728};
-var marker12 = new google.maps.Marker({
+var pos12 = {lat: 42.02619, lng: -93.6507};
+  var marker12 = new google.maps.Marker({
   position: pos12,
   map: map,
   icon: icon,
-  title: 'Black Hall Courtyard'
-});
+  title: ''
+  });
 var contentString12 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "17.jpg"><br>'+
- '<br><b>Floor: </b>outdoor<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=17">External Link</a><br><a href = "https://isustudyspots.github.io/Black.html#Bla3<b>More info</b> </a>'+
+  '<p>Black Hall Courtyard<br><img width=250 src = "Bla3.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.02619,+-93.6507/@42.02619,-93.6507,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=17">Hours</a><br><a href = "https://isustudyspots.github.io/Black.html#Bla3">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -734,24 +756,64 @@ var contentString12 = '<div id="content">'+
       infoWindow12.open(map, marker12);
   });
 
-//Lat-Lng not input - Skipped
+var pos13 = {lat: 42.026252, lng: -93.651268};
+  var marker13 = new google.maps.Marker({
+  position: pos13,
+  map: map,
+  icon: icon,
+  title: ''
+  });
+var contentString13 = '<div id="content">'+
+  '<div id="siteNotice">'+
+  '</div>'+
+  '<h1 id="bodyContent">'+
+  '<div id = "bodyContent">'+
+  '<p>Black Hallway<br><img width=250 src = "Bla4.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.026252,+-93.651268/@42.026252,-93.651268,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=17">Hours</a><br><a href = "https://isustudyspots.github.io/Black.html#Bla4">More info</a>'+
+  '</p>'+
+  '</div>'+
+  '</div>;'
+ var infoWindow13 = new google.maps.InfoWindow({content: contentString13});
+      marker13.addListener('click',function() {
+      infoWindow13.open(map, marker13);
+  });
 
-//Lat-Lng not input - Skipped
+var pos14 = {lat: 42.026077, lng: -93.651252};
+  var marker14 = new google.maps.Marker({
+  position: pos14,
+  map: map,
+  icon: icon,
+  title: ''
+  });
+var contentString14 = '<div id="content">'+
+  '<div id="siteNotice">'+
+  '</div>'+
+  '<h1 id="bodyContent">'+
+  '<div id = "bodyContent">'+
+  '<p>Black Hallway by Undergrad Center<br><img width=250 src = "Bla5.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.026077,+-93.651252/@42.026077,-93.651252,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=17">Hours</a><br><a href = "https://isustudyspots.github.io/Black.html#Bla5">More info</a>'+
+  '</p>'+
+  '</div>'+
+  '</div>;'
+ var infoWindow14 = new google.maps.InfoWindow({content: contentString14});
+      marker14.addListener('click',function() {
+      infoWindow14.open(map, marker14);
+  });
 
-  var pos15 = {lat: 42.02523, lng: -93.64834};
-var marker15 = new google.maps.Marker({
+var pos15 = {lat: 42.02523, lng: -93.6483};
+  var marker15 = new google.maps.Marker({
   position: pos15,
   map: map,
   icon: icon,
-  title: 'Carver Hallways'
-});
+  title: ''
+  });
 var contentString15 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "20.jpg"><br>'+
- '<br><b>Floor: </b>All<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=20">External Link</a><br><a href = "https://isustudyspots.github.io/Carver.html#Car1<b>More info</b> </a>'+
+  '<p>Carver Hallways<br><img width=250 src = "Car1.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.02523,+-93.6483/@42.02523,-93.6483,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=20">Hours</a><br><a href = "https://isustudyspots.github.io/Carver.html#Car1">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -760,20 +822,20 @@ var contentString15 = '<div id="content">'+
       infoWindow15.open(map, marker15);
   });
 
-  var pos16 = {lat: 42.02539, lng: -93.64839};
-var marker16 = new google.maps.Marker({
+var pos16 = {lat: 42.02539, lng: -93.6484};
+  var marker16 = new google.maps.Marker({
   position: pos16,
   map: map,
   icon: icon,
-  title: 'Carver Student Lounge'
-});
+  title: ''
+  });
 var contentString16 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "20.jpg"><br>'+
- '<br><b>Floor: </b>1<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=20">External Link</a><br><a href = "https://isustudyspots.github.io/Carver.html#Car2<b>More info</b> </a>'+
+  '<p>Carver Student Lounge<br><img width=250 src = "Car2.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.02539,+-93.6484/@42.02539,-93.6484,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=20">Hours</a><br><a href = "https://isustudyspots.github.io/Carver.html#Car2">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -782,20 +844,20 @@ var contentString16 = '<div id="content">'+
       infoWindow16.open(map, marker16);
   });
 
-  var pos17 = {lat: 42.027956, lng: -93.645675};
-var marker17 = new google.maps.Marker({
+var pos17 = {lat: 42.02566, lng: -93.6484};
+  var marker17 = new google.maps.Marker({
   position: pos17,
   map: map,
   icon: icon,
-  title: 'Catt Lounge'
-});
+  title: ''
+  });
 var contentString17 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "21.jpg"><br>'+
- '<br><b>Floor: </b>4<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=21">External Link</a><br><a href = "https://isustudyspots.github.io/Catt.html#Cat1<b>More info</b> </a>'+
+  '<p>George Washington Carver Plaza<br><img width=250 src = "car3.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.02566,+-93.6484/@42.02566,-93.6484,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=20">Hours</a><br><a href = "https://isustudyspots.github.io/Carver.html#car3">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -804,20 +866,20 @@ var contentString17 = '<div id="content">'+
       infoWindow17.open(map, marker17);
   });
 
-  var pos18 = {lat: 42.02818, lng: -93.65029};
-var marker18 = new google.maps.Marker({
+var pos18 = {lat: 42.02796, lng: -93.6457};
+  var marker18 = new google.maps.Marker({
   position: pos18,
   map: map,
   icon: icon,
-  title: 'Coover - Atanasoff Courtyard'
-});
+  title: ''
+  });
 var contentString18 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "25.jpg"><br>'+
- '<br><b>Floor: </b>Outdoor<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=25">External Link</a><br><a href = "https://isustudyspots.github.io/Coover.html#Coo1<b>More info</b> </a>'+
+  '<p>Catt Lounge<br><img width=250 src = "Cat1.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.02796,+-93.6457/@42.02796,-93.6457,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=21">Hours</a><br><a href = "https://isustudyspots.github.io/Catt.html#Cat1">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -826,20 +888,20 @@ var contentString18 = '<div id="content">'+
       infoWindow18.open(map, marker18);
   });
 
-  var pos19 = {lat: 42.02838, lng: -93.65113};
-var marker19 = new google.maps.Marker({
+var pos19 = {lat: 42.02818, lng: -93.6503};
+  var marker19 = new google.maps.Marker({
   position: pos19,
   map: map,
   icon: icon,
-  title: 'Coover Courtyard'
-});
+  title: ''
+  });
 var contentString19 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "25.jpg"><br>'+
- '<br><b>Floor: </b>Outdoor<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=25">External Link</a><br><a href = "https://isustudyspots.github.io/Coover.html#Coo2<b>More info</b> </a>'+
+  '<p>Coover - Atanasoff Courtyard<br><img width=250 src = "Coo1.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.02818,+-93.6503/@42.02818,-93.6503,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=25">Hours</a><br><a href = "https://isustudyspots.github.io/Coover.html#Coo1">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -848,20 +910,20 @@ var contentString19 = '<div id="content">'+
       infoWindow19.open(map, marker19);
   });
 
-  var pos20 = {lat: 42.02866, lng: -93.65121};
-var marker20 = new google.maps.Marker({
+var pos20 = {lat: 42.02838, lng: -93.6511};
+  var marker20 = new google.maps.Marker({
   position: pos20,
   map: map,
   icon: icon,
-  title: 'Coover N Foyer'
-});
+  title: ''
+  });
 var contentString20 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "25.jpg"><br>'+
- '<br><b>Floor: </b>1<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=25">External Link</a><br><a href = "https://isustudyspots.github.io/Coover.html#Coo3<b>More info</b> </a>'+
+  '<p>Coover Courtyard<br><img width=250 src = "Coo2.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.02838,+-93.6511/@42.02838,-93.6511,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=25">Hours</a><br><a href = "https://isustudyspots.github.io/Coover.html#Coo2">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -870,20 +932,20 @@ var contentString20 = '<div id="content">'+
       infoWindow20.open(map, marker20);
   });
 
-  var pos21 = {lat: 42.0286, lng: -93.6513};
-var marker21 = new google.maps.Marker({
+var pos21 = {lat: 42.02866, lng: -93.6512};
+  var marker21 = new google.maps.Marker({
   position: pos21,
   map: map,
   icon: icon,
-  title: 'Coover NW Corner'
-});
+  title: ''
+  });
 var contentString21 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "25.jpg"><br>'+
- '<br><b>Floor: </b>2<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=25">External Link</a><br><a href = "https://isustudyspots.github.io/Coover.html#Coo4<b>More info</b> </a>'+
+  '<p>Coover N Foyer<br><img width=250 src = "Coo3.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.02866,+-93.6512/@42.02866,-93.6512,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=25">Hours</a><br><a href = "https://isustudyspots.github.io/Coover.html#Coo3">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -892,20 +954,20 @@ var contentString21 = '<div id="content">'+
       infoWindow21.open(map, marker21);
   });
 
-  var pos22 = {lat: 42.02825, lng: -93.65088};
-var marker22 = new google.maps.Marker({
+var pos22 = {lat: 42.0286, lng: -93.6513};
+  var marker22 = new google.maps.Marker({
   position: pos22,
   map: map,
   icon: icon,
-  title: 'Coover Open Lab'
-});
+  title: ''
+  });
 var contentString22 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "25.jpg"><br>'+
- '<br><b>Floor: </b>1<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=25">External Link</a><br><a href = "https://isustudyspots.github.io/Coover.html#Coo5<b>More info</b> </a>'+
+  '<p>Coover NW Corner<br><img width=250 src = "Coo4.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.0286,+-93.6513/@42.0286,-93.6513,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=25">Hours</a><br><a href = "https://isustudyspots.github.io/Coover.html#Coo4">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -914,20 +976,20 @@ var contentString22 = '<div id="content">'+
       infoWindow22.open(map, marker22);
   });
 
-  var pos23 = {lat: 42.02823, lng: -93.65048};
-var marker23 = new google.maps.Marker({
+var pos23 = {lat: 42.02825, lng: -93.6509};
+  var marker23 = new google.maps.Marker({
   position: pos23,
   map: map,
   icon: icon,
-  title: 'Coover SE Foyer'
-});
+  title: ''
+  });
 var contentString23 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "25.jpg"><br>'+
- '<br><b>Floor: </b>1<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=25">External Link</a><br><a href = "https://isustudyspots.github.io/Coover.html#Coo6<b>More info</b> </a>'+
+  '<p>Coover Open Lab<br><img width=250 src = "Coo5.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.02825,+-93.6509/@42.02825,-93.6509,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=25">Hours</a><br><a href = "https://isustudyspots.github.io/Coover.html#Coo5">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -936,20 +998,20 @@ var contentString23 = '<div id="content">'+
       infoWindow23.open(map, marker23);
   });
 
-  var pos24 = {lat: 42.0282, lng: -93.6513};
-var marker24 = new google.maps.Marker({
+var pos24 = {lat: 42.02823, lng: -93.6505};
+  var marker24 = new google.maps.Marker({
   position: pos24,
   map: map,
   icon: icon,
-  title: 'Coover SW Hall - 2nd Floor'
-});
+  title: ''
+  });
 var contentString24 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "25.jpg"><br>'+
- '<br><b>Floor: </b>2<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=25">External Link</a><br><a href = "https://isustudyspots.github.io/Coover.html#Coo7<b>More info</b> </a>'+
+  '<p>Coover SE Foyer<br><img width=250 src = "Coo6.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.02823,+-93.6505/@42.02823,-93.6505,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=25">Hours</a><br><a href = "https://isustudyspots.github.io/Coover.html#Coo6">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -958,20 +1020,20 @@ var contentString24 = '<div id="content">'+
       infoWindow24.open(map, marker24);
   });
 
-  var pos25 = {lat: 42.0282, lng: -93.6513};
-var marker25 = new google.maps.Marker({
+var pos25 = {lat: 42.0282, lng: -93.6513};
+  var marker25 = new google.maps.Marker({
   position: pos25,
   map: map,
   icon: icon,
-  title: 'Coover SW Hall - 3rd Floor'
-});
+  title: ''
+  });
 var contentString25 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "25.jpg"><br>'+
- '<br><b>Floor: </b>3<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=25">External Link</a><br><a href = "https://isustudyspots.github.io/Coover.html#Coo8<b>More info</b> </a>'+
+  '<p>Coover SW Hall - 2nd Floor<br><img width=250 src = "Coo7.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.0282,+-93.6513/@42.0282,-93.6513,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=25">Hours</a><br><a href = "https://isustudyspots.github.io/Coover.html#Coo7">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -980,20 +1042,20 @@ var contentString25 = '<div id="content">'+
       infoWindow25.open(map, marker25);
   });
 
-  var pos26 = {lat: 42.02836, lng: -93.6512};
-var marker26 = new google.maps.Marker({
+var pos26 = {lat: 42.0282, lng: -93.6513};
+  var marker26 = new google.maps.Marker({
   position: pos26,
   map: map,
   icon: icon,
-  title: 'Coover W Foyer'
-});
+  title: ''
+  });
 var contentString26 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "25.jpg"><br>'+
- '<br><b>Floor: </b>1<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=25">External Link</a><br><a href = "https://isustudyspots.github.io/Coover.html#Coo9<b>More info</b> </a>'+
+  '<p>Coover SW Hall - 3rd Floor<br><img width=250 src = "Coo8.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.0282,+-93.6513/@42.0282,-93.6513,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=25">Hours</a><br><a href = "https://isustudyspots.github.io/Coover.html#Coo8">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -1002,20 +1064,20 @@ var contentString26 = '<div id="content">'+
       infoWindow26.open(map, marker26);
   });
 
-  var pos27 = {lat: 42.0286, lng: -93.6513};
-var marker27 = new google.maps.Marker({
+var pos27 = {lat: 42.02836, lng: -93.6512};
+  var marker27 = new google.maps.Marker({
   position: pos27,
   map: map,
   icon: icon,
-  title: 'Dan Crouse Lounge'
-});
+  title: ''
+  });
 var contentString27 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "25.jpg"><br>'+
- '<br><b>Floor: </b>3<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=25">External Link</a><br><a href = "https://isustudyspots.github.io/Coover.html#Coo10<b>More info</b> </a>'+
+  '<p>Coover W Foyer<br><img width=250 src = "Coo9.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.02836,+-93.6512/@42.02836,-93.6512,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=25">Hours</a><br><a href = "https://isustudyspots.github.io/Coover.html#Coo9">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -1024,20 +1086,20 @@ var contentString27 = '<div id="content">'+
       infoWindow27.open(map, marker27);
   });
 
-  var pos28 = {lat: 42.026166, lng: -93.6445};
-var marker28 = new google.maps.Marker({
+var pos28 = {lat: 42.0286, lng: -93.6513};
+  var marker28 = new google.maps.Marker({
   position: pos28,
   map: map,
   icon: icon,
-  title: 'Harl Commons'
-});
+  title: ''
+  });
 var contentString28 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "27.jpg"><br>'+
- '<br><b>Floor: </b>Sub-ground<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=27">External Link</a><br><a href = "https://isustudyspots.github.io/Curtiss.html#Cur2<b>More info</b> </a>'+
+  '<p>Dan Crouse Lounge<br><img width=250 src = "Coo10.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.0286,+-93.6513/@42.0286,-93.6513,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=25">Hours</a><br><a href = "https://isustudyspots.github.io/Coover.html#Coo10">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -1046,20 +1108,20 @@ var contentString28 = '<div id="content">'+
       infoWindow28.open(map, marker28);
   });
 
-  var pos29 = {lat: 42.02769, lng: -93.64962};
-var marker29 = new google.maps.Marker({
+var pos29 = {lat: 42.026166, lng: -93.6445};
+  var marker29 = new google.maps.Marker({
   position: pos29,
   map: map,
   icon: icon,
-  title: 'Durham Atrium'
-});
+  title: ''
+  });
 var contentString29 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "32.jpg"><br>'+
- '<br><b>Floor: </b>3<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=32">External Link</a><br><a href = "https://isustudyspots.github.io/Durham.html#Dur1<b>More info</b> </a>'+
+  '<p>Harl Commons<br><img width=250 src = "Cur2.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.026166,+-93.6445/@42.026166,-93.6445,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=27">Hours</a><br><a href = "https://isustudyspots.github.io/Curtiss.html#Cur2">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -1068,20 +1130,20 @@ var contentString29 = '<div id="content">'+
       infoWindow29.open(map, marker29);
   });
 
-  var pos30 = {lat: 42.02765, lng: -93.64979};
-var marker30 = new google.maps.Marker({
+var pos30 = {lat: 42.025961, lng: -93.644864};
+  var marker30 = new google.maps.Marker({
   position: pos30,
   map: map,
   icon: icon,
-  title: 'Durham Basement Hallway'
-});
+  title: ''
+  });
 var contentString30 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "32.jpg"><br>'+
- '<br><b>Floor: </b>B<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=32">External Link</a><br><a href = "https://isustudyspots.github.io/Durham.html#Dur2<b>More info</b> </a>'+
+  '<p>Lone Desk<br><img width=250 src = "cur2.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.025961,+-93.644864/@42.025961,-93.644864,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=27">Hours</a><br><a href = "https://isustudyspots.github.io/Curtiss.html#cur2">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -1090,20 +1152,20 @@ var contentString30 = '<div id="content">'+
       infoWindow30.open(map, marker30);
   });
 
-  var pos31 = {lat: 42.02758, lng: -93.64993};
-var marker31 = new google.maps.Marker({
+var pos31 = {lat: 42.028754, lng: -93.652901};
+  var marker31 = new google.maps.Marker({
   position: pos31,
   map: map,
   icon: icon,
-  title: 'Durham Foyer'
-});
+  title: ''
+  });
 var contentString31 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "32.jpg"><br>'+
- '<br><b>Floor: </b>1<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=32">External Link</a><br><a href = "https://isustudyspots.github.io/Durham.html#Dur3<b>More info</b> </a>'+
+  '<p>Design Foyer<br><img width=250 src = "des1.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.028754,+-93.652901/@42.028754,-93.652901,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=31">Hours</a><br><a href = "https://isustudyspots.github.io/Design.html#des1">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -1112,20 +1174,20 @@ var contentString31 = '<div id="content">'+
       infoWindow31.open(map, marker31);
   });
 
-  var pos32 = {lat: 42.03778, lng: -91.93667};
-var marker32 = new google.maps.Marker({
+var pos32 = {lat: 42.02822, lng: -93.653392};
+  var marker32 = new google.maps.Marker({
   position: pos32,
   map: map,
   icon: icon,
-  title: 'Forker Foyer'
-});
+  title: ''
+  });
 var contentString32 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "43.jpg"><br>'+
- '<br><b>Floor: </b>2<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=43">External Link</a><br><a href = "https://isustudyspots.github.io/Forker.html#For1<b>More info</b> </a>'+
+  '<p>Design Reading Room<br><img width=250 src = "des2.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.02822,+-93.653392/@42.02822,-93.653392,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=31">Hours</a><br><a href = "https://isustudyspots.github.io/Design.html#des2">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -1134,20 +1196,20 @@ var contentString32 = '<div id="content">'+
       infoWindow32.open(map, marker32);
   });
 
-  var pos33 = {lat: 42.03778, lng: -91.93694};
-var marker33 = new google.maps.Marker({
+var pos33 = {lat: 42.028363, lng: -93.653398};
+  var marker33 = new google.maps.Marker({
   position: pos33,
   map: map,
   icon: icon,
-  title: 'Forker West Hallway'
-});
+  title: ''
+  });
 var contentString33 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "43.jpg"><br>'+
- '<br><b>Floor: </b>1<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=43">External Link</a><br><a href = "https://isustudyspots.github.io/Forker.html#For2<b>More info</b> </a>'+
+  '<p>Design Lounge<br><img width=250 src = "des3.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.028363,+-93.653398/@42.028363,-93.653398,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=31">Hours</a><br><a href = "https://isustudyspots.github.io/Design.html#des3">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -1156,20 +1218,20 @@ var contentString33 = '<div id="content">'+
       infoWindow33.open(map, marker33);
   });
 
-  var pos34 = {lat: 42.025377, lng: -93.644302};
-var marker34 = new google.maps.Marker({
+var pos34 = {lat: 42.02769, lng: -93.6496};
+  var marker34 = new google.maps.Marker({
   position: pos34,
   map: map,
   icon: icon,
-  title: 'Droste Den'
-});
+  title: ''
+  });
 var contentString34 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "164.jpg"><br>'+
- '<br><b>Floor: </b>1<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=164">External Link</a><br><a href = "https://isustudyspots.github.io/Gerdin.html#Ger1<b>More info</b> </a>'+
+  '<p>Durham Atrium<br><img width=250 src = "Dur1.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.02769,+-93.6496/@42.02769,-93.6496,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=32">Hours</a><br><a href = "https://isustudyspots.github.io/Durham.html#Dur1">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -1178,22 +1240,42 @@ var contentString34 = '<div id="content">'+
       infoWindow34.open(map, marker34);
   });
 
-//Lat-Lng not input - Skipped
+var pos35 = {lat: 42.02765, lng: -93.6498};
+  var marker35 = new google.maps.Marker({
+  position: pos35,
+  map: map,
+  icon: icon,
+  title: ''
+  });
+var contentString35 = '<div id="content">'+
+  '<div id="siteNotice">'+
+  '</div>'+
+  '<h1 id="bodyContent">'+
+  '<div id = "bodyContent">'+
+  '<p>Durham Basement Hallway<br><img width=250 src = "Dur2.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.02765,+-93.6498/@42.02765,-93.6498,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=32">Hours</a><br><a href = "https://isustudyspots.github.io/Durham.html#Dur2">More info</a>'+
+  '</p>'+
+  '</div>'+
+  '</div>;'
+ var infoWindow35 = new google.maps.InfoWindow({content: contentString35});
+      marker35.addListener('click',function() {
+      infoWindow35.open(map, marker35);
+  });
 
-  var pos36 = {lat: 42.025579, lng: -93.644374};
-var marker36 = new google.maps.Marker({
+var pos36 = {lat: 42.02758, lng: -93.6499};
+  var marker36 = new google.maps.Marker({
   position: pos36,
   map: map,
   icon: icon,
-  title: 'Gerdin Lounge near 3323'
-});
+  title: ''
+  });
 var contentString36 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "164.jpg"><br>'+
- '<br><b>Floor: </b>3<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=164">External Link</a><br><a href = "https://isustudyspots.github.io/Gerdin.html#Ger3<b>More info</b> </a>'+
+  '<p>Durham Foyer<br><img width=250 src = "Dur3.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.02758,+-93.6499/@42.02758,-93.6499,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=32">Hours</a><br><a href = "https://isustudyspots.github.io/Durham.html#Dur3">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -1202,20 +1284,20 @@ var contentString36 = '<div id="content">'+
       infoWindow36.open(map, marker36);
   });
 
-  var pos37 = {lat: 42.04028, lng: -91.92889};
-var marker37 = new google.maps.Marker({
+var pos37 = {lat: 42.027016, lng: -93.642706};
+  var marker37 = new google.maps.Marker({
   position: pos37,
   map: map,
   icon: icon,
-  title: 'Gilman Hallway'
-});
+  title: ''
+  });
 var contentString37 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "48.jpg"><br>'+
- '<br><b>Floor: </b>2<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=48">External Link</a><br><a href = "https://isustudyspots.github.io/Gilman.html#Gil1<b>More info</b> </a>'+
+  '<p>Table by 2591<br><img width=250 src = "foo1.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.027016,+-93.642706/@42.027016,-93.642706,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=41">Hours</a><br><a href = "https://isustudyspots.github.io/Food Science.html#foo1">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -1224,20 +1306,20 @@ var contentString37 = '<div id="content">'+
       infoWindow37.open(map, marker37);
   });
 
-  var pos38 = {lat: 42.03861, lng: -91.93556};
-var marker38 = new google.maps.Marker({
+var pos38 = {lat: 42.027154, lng: -93.64271};
+  var marker38 = new google.maps.Marker({
   position: pos38,
   map: map,
   icon: icon,
-  title: 'Hamilton Central'
-});
+  title: ''
+  });
 var contentString38 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "49.jpg"><br>'+
- '<br><b>Floor: </b>1<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=49">External Link</a><br><a href = "https://isustudyspots.github.io/Hamilton.html#Ham1<b>More info</b> </a>'+
+  '<p>Nook 2561<br><img width=250 src = "foo2.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.027154,+-93.64271/@42.027154,-93.64271,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=41">Hours</a><br><a href = "https://isustudyspots.github.io/Food Science.html#foo2">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -1246,20 +1328,20 @@ var contentString38 = '<div id="content">'+
       infoWindow38.open(map, marker38);
   });
 
-  var pos39 = {lat: 42.03833, lng: -91.93556};
-var marker39 = new google.maps.Marker({
+var pos39 = {lat: 42.027154, lng: -93.64271};
+  var marker39 = new google.maps.Marker({
   position: pos39,
   map: map,
   icon: icon,
-  title: 'Hamilton W Foyer'
-});
+  title: ''
+  });
 var contentString39 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "49.jpg"><br>'+
- '<br><b>Floor: </b>1<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=49">External Link</a><br><a href = "https://isustudyspots.github.io/Hamilton.html#Ham2<b>More info</b> </a>'+
+  '<p>Nook 1561<br><img width=250 src = "foo3.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.027154,+-93.64271/@42.027154,-93.64271,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=41">Hours</a><br><a href = "https://isustudyspots.github.io/Food Science.html#foo3">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -1268,20 +1350,20 @@ var contentString39 = '<div id="content">'+
       infoWindow39.open(map, marker39);
   });
 
-  var pos40 = {lat: 42.03722, lng: -91.93472};
-var marker40 = new google.maps.Marker({
+var pos40 = {lat: 42.026982, lng: -93.642422};
+  var marker40 = new google.maps.Marker({
   position: pos40,
   map: map,
   icon: icon,
-  title: 'Heady Foyer'
-});
+  title: ''
+  });
 var contentString40 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "51.jpg"><br>'+
- '<br><b>Floor: </b>1<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=51">External Link</a><br><a href = "https://isustudyspots.github.io/Heady.html#Hea1<b>More info</b> </a>'+
+  '<p>Table by 2597<br><img width=250 src = "foo4.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.026982,+-93.642422/@42.026982,-93.642422,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=41">Hours</a><br><a href = "https://isustudyspots.github.io/Food Science.html#foo4">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -1290,20 +1372,20 @@ var contentString40 = '<div id="content">'+
       infoWindow40.open(map, marker40);
   });
 
-  var pos41 = {lat: 42.026725, lng: -93.651697};
-var marker41 = new google.maps.Marker({
+var pos41 = {lat: 42.026634, lng: -93.642584};
+  var marker41 = new google.maps.Marker({
   position: pos41,
   map: map,
   icon: icon,
-  title: 'Hoover above Skywalk'
-});
+  title: ''
+  });
 var contentString41 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "163.jpg"><br>'+
- '<br><b>Floor: </b>3<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=163">External Link</a><br><a href = "https://isustudyspots.github.io/Hoover.html#Hoo1<b>More info</b> </a>'+
+  '<p>Balcony Table<br><img width=250 src = "foo5.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.026634,+-93.642584/@42.026634,-93.642584,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=41">Hours</a><br><a href = "https://isustudyspots.github.io/Food Science.html#foo5">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -1312,20 +1394,20 @@ var contentString41 = '<div id="content">'+
       infoWindow41.open(map, marker41);
   });
 
-  var pos42 = {lat: 42.026755, lng: -93.650763};
-var marker42 = new google.maps.Marker({
+var pos42 = {lat: 42.026586, lng: -93.642766};
+  var marker42 = new google.maps.Marker({
   position: pos42,
   map: map,
   icon: icon,
-  title: 'Hoover E Hallway'
-});
+  title: ''
+  });
 var contentString42 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "163.jpg"><br>'+
- '<br><b>Floor: </b>2<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=163">External Link</a><br><a href = "https://isustudyspots.github.io/Hoover.html#Hoo2<b>More info</b> </a>'+
+  '<p>Balcony Armchairs<br><img width=250 src = "foo6.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.026586,+-93.642766/@42.026586,-93.642766,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=41">Hours</a><br><a href = "https://isustudyspots.github.io/Food Science.html#foo6">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -1334,22 +1416,42 @@ var contentString42 = '<div id="content">'+
       infoWindow42.open(map, marker42);
   });
 
-//Lat-Lng not input - Skipped
+var pos43 = {lat: 42.026855, lng: -93.642967};
+  var marker43 = new google.maps.Marker({
+  position: pos43,
+  map: map,
+  icon: icon,
+  title: ''
+  });
+var contentString43 = '<div id="content">'+
+  '<div id="siteNotice">'+
+  '</div>'+
+  '<h1 id="bodyContent">'+
+  '<div id = "bodyContent">'+
+  '<p>Courtyard<br><img width=250 src = "foo7.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.026855,+-93.642967/@42.026855,-93.642967,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=41">Hours</a><br><a href = "https://isustudyspots.github.io/Food Science.html#foo7">More info</a>'+
+  '</p>'+
+  '</div>'+
+  '</div>;'
+ var infoWindow43 = new google.maps.InfoWindow({content: contentString43});
+      marker43.addListener('click',function() {
+      infoWindow43.open(map, marker43);
+  });
 
-  var pos44 = {lat: 42.026766, lng: -93.650664};
-var marker44 = new google.maps.Marker({
+var pos44 = {lat: 42.03778, lng: -91.93667};
+  var marker44 = new google.maps.Marker({
   position: pos44,
   map: map,
   icon: icon,
-  title: 'Hoover Foyer'
-});
+  title: ''
+  });
 var contentString44 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "163.jpg"><br>'+
- '<br><b>Floor: </b>1<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=163">External Link</a><br><a href = "https://isustudyspots.github.io/Hoover.html#Hoo4<b>More info</b> </a>'+
+  '<p>Forker Foyer<br><img width=250 src = "For1.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.03778,+-91.93667/@42.03778,-91.93667,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=43">Hours</a><br><a href = "https://isustudyspots.github.io/Forker.html#For1">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -1358,22 +1460,42 @@ var contentString44 = '<div id="content">'+
       infoWindow44.open(map, marker44);
   });
 
-//Lat-Lng not input - Skipped
+var pos45 = {lat: 42.03778, lng: -91.93694};
+  var marker45 = new google.maps.Marker({
+  position: pos45,
+  map: map,
+  icon: icon,
+  title: ''
+  });
+var contentString45 = '<div id="content">'+
+  '<div id="siteNotice">'+
+  '</div>'+
+  '<h1 id="bodyContent">'+
+  '<div id = "bodyContent">'+
+  '<p>Forker West Hallway<br><img width=250 src = "For2.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.03778,+-91.93694/@42.03778,-91.93694,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=43">Hours</a><br><a href = "https://isustudyspots.github.io/Forker.html#For2">More info</a>'+
+  '</p>'+
+  '</div>'+
+  '</div>;'
+ var infoWindow45 = new google.maps.InfoWindow({content: contentString45});
+      marker45.addListener('click',function() {
+      infoWindow45.open(map, marker45);
+  });
 
-  var pos46 = {lat: 42.026672, lng: -93.650492};
-var marker46 = new google.maps.Marker({
+var pos46 = {lat: 42.02521, lng: -93.6446};
+  var marker46 = new google.maps.Marker({
   position: pos46,
   map: map,
   icon: icon,
-  title: 'Hoover S Foyer'
-});
+  title: ''
+  });
 var contentString46 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "163.jpg"><br>'+
- '<br><b>Floor: </b>1<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=163">External Link</a><br><a href = "https://isustudyspots.github.io/Hoover.html#Hoo6<b>More info</b> </a>'+
+  '<p>Bergstrom Commons<br><img width=250 src = "ger1.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.02521,+-93.6446/@42.02521,-93.6446,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=164">Hours</a><br><a href = "https://isustudyspots.github.io/Gerdin.html#ger1">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -1382,20 +1504,20 @@ var contentString46 = '<div id="content">'+
       infoWindow46.open(map, marker46);
   });
 
-  var pos47 = {lat: 42.027851, lng: -93.645025};
-var marker47 = new google.maps.Marker({
+var pos47 = {lat: 42.02538, lng: -93.6443};
+  var marker47 = new google.maps.Marker({
   position: pos47,
   map: map,
   icon: icon,
-  title: 'Horticulture Hall Courtyard'
-});
+  title: ''
+  });
 var contentString47 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "55.jpg"><br>'+
- '<br><b>Floor: </b>outdoor<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=55">External Link</a><br><a href = "https://isustudyspots.github.io/Horticulture.html#Hor1<b>More info</b> </a>'+
+  '<p>Droste Den<br><img width=250 src = "Ger1.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.02538,+-93.6443/@42.02538,-93.6443,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=164">Hours</a><br><a href = "https://isustudyspots.github.io/Gerdin.html#Ger1">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -1404,30 +1526,130 @@ var contentString47 = '<div id="content">'+
       infoWindow47.open(map, marker47);
   });
 
-//Lat-Lng not input - Skipped
+var pos48 = {lat: 42.025578, lng: -93.644416};
+  var marker48 = new google.maps.Marker({
+  position: pos48,
+  map: map,
+  icon: icon,
+  title: ''
+  });
+var contentString48 = '<div id="content">'+
+  '<div id="siteNotice">'+
+  '</div>'+
+  '<h1 id="bodyContent">'+
+  '<div id = "bodyContent">'+
+  '<p>Gerdin 3rd floor wall nook. across from 324<br><img width=250 src = "Ger2.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.025578,+-93.644416/@42.025578,-93.644416,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=164">Hours</a><br><a href = "https://isustudyspots.github.io/Gerdin.html#Ger2">More info</a>'+
+  '</p>'+
+  '</div>'+
+  '</div>;'
+ var infoWindow48 = new google.maps.InfoWindow({content: contentString48});
+      marker48.addListener('click',function() {
+      infoWindow48.open(map, marker48);
+  });
 
-//Lat-Lng not input - Skipped
+var pos49 = {lat: 42.02558, lng: -93.6444};
+  var marker49 = new google.maps.Marker({
+  position: pos49,
+  map: map,
+  icon: icon,
+  title: ''
+  });
+var contentString49 = '<div id="content">'+
+  '<div id="siteNotice">'+
+  '</div>'+
+  '<h1 id="bodyContent">'+
+  '<div id = "bodyContent">'+
+  '<p>Gerdin Lounge near 3323<br><img width=250 src = "Ger3.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.02558,+-93.6444/@42.02558,-93.6444,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=164">Hours</a><br><a href = "https://isustudyspots.github.io/Gerdin.html#Ger3">More info</a>'+
+  '</p>'+
+  '</div>'+
+  '</div>;'
+ var infoWindow49 = new google.maps.InfoWindow({content: contentString49});
+      marker49.addListener('click',function() {
+      infoWindow49.open(map, marker49);
+  });
 
-//Lat-Lng not input - Skipped
+var pos50 = {lat: 42.04028, lng: -91.92889};
+  var marker50 = new google.maps.Marker({
+  position: pos50,
+  map: map,
+  icon: icon,
+  title: ''
+  });
+var contentString50 = '<div id="content">'+
+  '<div id="siteNotice">'+
+  '</div>'+
+  '<h1 id="bodyContent">'+
+  '<div id = "bodyContent">'+
+  '<p>Gilman Hallway<br><img width=250 src = "Gil1.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.04028,+-91.92889/@42.04028,-91.92889,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=48">Hours</a><br><a href = "https://isustudyspots.github.io/Gilman.html#Gil1">More info</a>'+
+  '</p>'+
+  '</div>'+
+  '</div>;'
+ var infoWindow50 = new google.maps.InfoWindow({content: contentString50});
+      marker50.addListener('click',function() {
+      infoWindow50.open(map, marker50);
+  });
 
-//Lat-Lng not input - Skipped
+var pos51 = {lat: 42.030027, lng: -93.649893};
+  var marker51 = new google.maps.Marker({
+  position: pos51,
+  map: map,
+  icon: icon,
+  title: ''
+  });
+var contentString51 = '<div id="content">'+
+  '<div id="siteNotice">'+
+  '</div>'+
+  '<h1 id="bodyContent">'+
+  '<div id = "bodyContent">'+
+  '<p>Hach Foyer<br><img width=250 src = "hac1.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.030027,+-93.649893/@42.030027,-93.649893,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=222">Hours</a><br><a href = "https://isustudyspots.github.io/Hach.html#hac1">More info</a>'+
+  '</p>'+
+  '</div>'+
+  '</div>;'
+ var infoWindow51 = new google.maps.InfoWindow({content: contentString51});
+      marker51.addListener('click',function() {
+      infoWindow51.open(map, marker51);
+  });
 
-//Lat-Lng not input - Skipped
+var pos52 = {lat: 42.03861, lng: -91.93556};
+  var marker52 = new google.maps.Marker({
+  position: pos52,
+  map: map,
+  icon: icon,
+  title: ''
+  });
+var contentString52 = '<div id="content">'+
+  '<div id="siteNotice">'+
+  '</div>'+
+  '<h1 id="bodyContent">'+
+  '<div id = "bodyContent">'+
+  '<p>Hamilton Central<br><img width=250 src = "Ham1.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.03861,+-91.93556/@42.03861,-91.93556,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=49">Hours</a><br><a href = "https://isustudyspots.github.io/Hamilton.html#Ham1">More info</a>'+
+  '</p>'+
+  '</div>'+
+  '</div>;'
+ var infoWindow52 = new google.maps.InfoWindow({content: contentString52});
+      marker52.addListener('click',function() {
+      infoWindow52.open(map, marker52);
+  });
 
-  var pos53 = {lat: 42.04056, lng: -91.93389};
-var marker53 = new google.maps.Marker({
+var pos53 = {lat: 42.03833, lng: -91.93556};
+  var marker53 = new google.maps.Marker({
   position: pos53,
   map: map,
   icon: icon,
-  title: 'Kildee Central Foyer'
-});
+  title: ''
+  });
 var contentString53 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "67.jpg"><br>'+
- '<br><b>Floor: </b>B<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=67">External Link</a><br><a href = "https://isustudyspots.github.io/Kildee.html#Kil1<b>More info</b> </a>'+
+  '<p>Hamilton W Foyer<br><img width=250 src = "Ham2.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.03833,+-91.93556/@42.03833,-91.93556,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=49">Hours</a><br><a href = "https://isustudyspots.github.io/Hamilton.html#Ham2">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -1436,20 +1658,20 @@ var contentString53 = '<div id="content">'+
       infoWindow53.open(map, marker53);
   });
 
-  var pos54 = {lat: 42.04, lng: -91.93361};
-var marker54 = new google.maps.Marker({
+var pos54 = {lat: 42.03722, lng: -91.93472};
+  var marker54 = new google.maps.Marker({
   position: pos54,
   map: map,
   icon: icon,
-  title: 'Kildee East Foyer'
-});
+  title: ''
+  });
 var contentString54 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "67.jpg"><br>'+
- '<br><b>Floor: </b>1<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=67">External Link</a><br><a href = "https://isustudyspots.github.io/Kildee.html#Kil2<b>More info</b> </a>'+
+  '<p>Heady Foyer<br><img width=250 src = "Hea1.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.03722,+-91.93472/@42.03722,-91.93472,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=51">Hours</a><br><a href = "https://isustudyspots.github.io/Heady.html#Hea1">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -1458,20 +1680,20 @@ var contentString54 = '<div id="content">'+
       infoWindow54.open(map, marker54);
   });
 
-  var pos55 = {lat: 42.04083, lng: -91.93306};
-var marker55 = new google.maps.Marker({
+var pos55 = {lat: 42.02673, lng: -93.6517};
+  var marker55 = new google.maps.Marker({
   position: pos55,
   map: map,
   icon: icon,
-  title: 'Kildee South Foyer'
-});
+  title: ''
+  });
 var contentString55 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "67.jpg"><br>'+
- '<br><b>Floor: </b>1<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=67">External Link</a><br><a href = "https://isustudyspots.github.io/Kildee.html#Kil3<b>More info</b> </a>'+
+  '<p>Hoover above Skywalk<br><img width=250 src = "Hoo1.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.02673,+-93.6517/@42.02673,-93.6517,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=163">Hours</a><br><a href = "https://isustudyspots.github.io/Hoover.html#Hoo1">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -1480,20 +1702,20 @@ var contentString55 = '<div id="content">'+
       infoWindow55.open(map, marker55);
   });
 
-  var pos56 = {lat: 42.04056, lng: -91.93389};
-var marker56 = new google.maps.Marker({
+var pos56 = {lat: 42.02676, lng: -93.6508};
+  var marker56 = new google.maps.Marker({
   position: pos56,
   map: map,
   icon: icon,
-  title: 'Kildee South Hallway'
-});
+  title: ''
+  });
 var contentString56 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "67.jpg"><br>'+
- '<br><b>Floor: </b>1<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=67">External Link</a><br><a href = "https://isustudyspots.github.io/Kildee.html#Kil4<b>More info</b> </a>'+
+  '<p>Hoover E Hallway<br><img width=250 src = "Hoo2.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.02676,+-93.6508/@42.02676,-93.6508,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=163">Hours</a><br><a href = "https://isustudyspots.github.io/Hoover.html#Hoo2">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -1502,20 +1724,20 @@ var contentString56 = '<div id="content">'+
       infoWindow56.open(map, marker56);
   });
 
-  var pos57 = {lat: 42.04056, lng: -91.93389};
-var marker57 = new google.maps.Marker({
+var pos57 = {lat: 42.026715, lng: -93.650549};
+  var marker57 = new google.maps.Marker({
   position: pos57,
   map: map,
   icon: icon,
-  title: 'Kildee West Hallway'
-});
+  title: ''
+  });
 var contentString57 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "67.jpg"><br>'+
- '<br><b>Floor: </b>1<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=67">External Link</a><br><a href = "https://isustudyspots.github.io/Kildee.html#Kil5<b>More info</b> </a>'+
+  '<p>Hoover East Hall<br><img width=250 src = "Hoo3.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.026715,+-93.650549/@42.026715,-93.650549,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=163">Hours</a><br><a href = "https://isustudyspots.github.io/Hoover.html#Hoo3">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -1524,20 +1746,20 @@ var contentString57 = '<div id="content">'+
       infoWindow57.open(map, marker57);
   });
 
-  var pos58 = {lat: 42.04056, lng: -91.93389};
-var marker58 = new google.maps.Marker({
+var pos58 = {lat: 42.02677, lng: -93.6507};
+  var marker58 = new google.maps.Marker({
   position: pos58,
   map: map,
   icon: icon,
-  title: 'Kildee West Lounge'
-});
+  title: ''
+  });
 var contentString58 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "67.jpg"><br>'+
- '<br><b>Floor: </b>2<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=67">External Link</a><br><a href = "https://isustudyspots.github.io/Kildee.html#Kil6<b>More info</b> </a>'+
+  '<p>Hoover Foyer<br><img width=250 src = "Hoo4.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.02677,+-93.6507/@42.02677,-93.6507,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=163">Hours</a><br><a href = "https://isustudyspots.github.io/Hoover.html#Hoo4">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -1546,20 +1768,20 @@ var contentString58 = '<div id="content">'+
       infoWindow58.open(map, marker58);
   });
 
-  var pos59 = {lat: 42.04111, lng: -91.93222};
-var marker59 = new google.maps.Marker({
+var pos59 = {lat: 42.027061, lng: -93.652843};
+  var marker59 = new google.maps.Marker({
   position: pos59,
   map: map,
   icon: icon,
-  title: 'Lagomarcino Cafe'
-});
+  title: ''
+  });
 var contentString59 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "72.jpg"><br>'+
- '<br><b>Floor: </b>1<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=72">External Link</a><br><a href = "https://isustudyspots.github.io/Lagomarcino.html#Lag1<b>More info</b> </a>'+
+  '<p>Howe Hallway near 2231<br><img width=250 src = "Hoo5.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.027061,+-93.652843/@42.027061,-93.652843,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=163">Hours</a><br><a href = "https://isustudyspots.github.io/Hoover.html#Hoo5">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -1568,20 +1790,20 @@ var contentString59 = '<div id="content">'+
       infoWindow59.open(map, marker59);
   });
 
-  var pos60 = {lat: 42.04056, lng: -91.9325};
-var marker60 = new google.maps.Marker({
+var pos60 = {lat: 42.02667, lng: -93.6505};
+  var marker60 = new google.maps.Marker({
   position: pos60,
   map: map,
   icon: icon,
-  title: 'Lagomarcino E Hallway'
-});
+  title: ''
+  });
 var contentString60 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "72.jpg"><br>'+
- '<br><b>Floor: </b>1<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=72">External Link</a><br><a href = "https://isustudyspots.github.io/Lagomarcino.html#Lag2<b>More info</b> </a>'+
+  '<p>Hoover S Foyer<br><img width=250 src = "Hoo6.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.02667,+-93.6505/@42.02667,-93.6505,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=163">Hours</a><br><a href = "https://isustudyspots.github.io/Hoover.html#Hoo6">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -1590,20 +1812,20 @@ var contentString60 = '<div id="content">'+
       infoWindow60.open(map, marker60);
   });
 
-  var pos61 = {lat: 42.04139, lng: -91.9325};
-var marker61 = new google.maps.Marker({
+var pos61 = {lat: 42.02785, lng: -93.645};
+  var marker61 = new google.maps.Marker({
   position: pos61,
   map: map,
   icon: icon,
-  title: 'Lagomarcino N Foyer'
-});
+  title: ''
+  });
 var contentString61 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "72.jpg"><br>'+
- '<br><b>Floor: </b>1<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=72">External Link</a><br><a href = "https://isustudyspots.github.io/Lagomarcino.html#Lag3<b>More info</b> </a>'+
+  '<p>Horticulture Hall Courtyard<br><img width=250 src = "Hor1.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.02785,+-93.645/@42.02785,-93.645,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=55">Hours</a><br><a href = "https://isustudyspots.github.io/Horticulture.html#Hor1">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -1612,20 +1834,20 @@ var contentString61 = '<div id="content">'+
       infoWindow61.open(map, marker61);
   });
 
-  var pos62 = {lat: 42.04111, lng: -91.93222};
-var marker62 = new google.maps.Marker({
+var pos62 = {lat: 42.026797, lng: -93.652626};
+  var marker62 = new google.maps.Marker({
   position: pos62,
   map: map,
   icon: icon,
-  title: 'Lagomarcino Courtyard'
-});
+  title: ''
+  });
 var contentString62 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "72.jpg"><br>'+
- '<br><b>Floor: </b>outdoor<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=72">External Link</a><br><a href = "https://isustudyspots.github.io/Lagomarcino.html#Lag4<b>More info</b> </a>'+
+  '<p>Howe Atrium<br><img width=250 src = "How1.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.026797,+-93.652626/@42.026797,-93.652626,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=56">Hours</a><br><a href = "https://isustudyspots.github.io/Howe.html#How1">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -1634,20 +1856,20 @@ var contentString62 = '<div id="content">'+
       infoWindow62.open(map, marker62);
   });
 
-  var pos63 = {lat: 42.02859, lng: -93.64759};
-var marker63 = new google.maps.Marker({
+var pos63 = {lat: 42.026912, lng: -93.652427};
+  var marker63 = new google.maps.Marker({
   position: pos63,
   map: map,
   icon: icon,
-  title: 'LeBaron Computer Lab'
-});
+  title: ''
+  });
 var contentString63 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "76.jpg"><br>'+
- '<br><b>Floor: </b>1<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=76">External Link</a><br><a href = "https://isustudyspots.github.io/LeBaron.html#LeB1<b>More info</b> </a>'+
+  '<p>Howe by Lecture Hall<br><img width=250 src = "How2.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.026912,+-93.652427/@42.026912,-93.652427,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=56">Hours</a><br><a href = "https://isustudyspots.github.io/Howe.html#How2">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -1656,26 +1878,86 @@ var contentString63 = '<div id="content">'+
       infoWindow63.open(map, marker63);
   });
 
-//Lat-Lng not input - Skipped
+var pos64 = {lat: 42.026806, lng: -93.652472};
+  var marker64 = new google.maps.Marker({
+  position: pos64,
+  map: map,
+  icon: icon,
+  title: ''
+  });
+var contentString64 = '<div id="content">'+
+  '<div id="siteNotice">'+
+  '</div>'+
+  '<h1 id="bodyContent">'+
+  '<div id = "bodyContent">'+
+  '<p>Howe by Skywalk<br><img width=250 src = "How3.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.026806,+-93.652472/@42.026806,-93.652472,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=56">Hours</a><br><a href = "https://isustudyspots.github.io/Howe.html#How3">More info</a>'+
+  '</p>'+
+  '</div>'+
+  '</div>;'
+ var infoWindow64 = new google.maps.InfoWindow({content: contentString64});
+      marker64.addListener('click',function() {
+      infoWindow64.open(map, marker64);
+  });
 
-//Lat-Lng not input - Skipped
+var pos65 = {lat: 42.02674, lng: -93.652526};
+  var marker65 = new google.maps.Marker({
+  position: pos65,
+  map: map,
+  icon: icon,
+  title: ''
+  });
+var contentString65 = '<div id="content">'+
+  '<div id="siteNotice">'+
+  '</div>'+
+  '<h1 id="bodyContent">'+
+  '<div id = "bodyContent">'+
+  '<p>Howe Lobby<br><img width=250 src = "How4.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.02674,+-93.652526/@42.02674,-93.652526,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=56">Hours</a><br><a href = "https://isustudyspots.github.io/Howe.html#How4">More info</a>'+
+  '</p>'+
+  '</div>'+
+  '</div>;'
+ var infoWindow65 = new google.maps.InfoWindow({content: contentString65});
+      marker65.addListener('click',function() {
+      infoWindow65.open(map, marker65);
+  });
 
-//Lat-Lng not input - Skipped
+var pos66 = {lat: 42.026754, lng: -93.65306};
+  var marker66 = new google.maps.Marker({
+  position: pos66,
+  map: map,
+  icon: icon,
+  title: ''
+  });
+var contentString66 = '<div id="content">'+
+  '<div id="siteNotice">'+
+  '</div>'+
+  '<h1 id="bodyContent">'+
+  '<div id = "bodyContent">'+
+  '<p>Howe under Airplane<br><img width=250 src = "How5.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.026754,+-93.65306/@42.026754,-93.65306,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=56">Hours</a><br><a href = "https://isustudyspots.github.io/Howe.html#How5">More info</a>'+
+  '</p>'+
+  '</div>'+
+  '</div>;'
+ var infoWindow66 = new google.maps.InfoWindow({content: contentString66});
+      marker66.addListener('click',function() {
+      infoWindow66.open(map, marker66);
+  });
 
-  var pos67 = {lat: 42.02791, lng: -93.64759};
-var marker67 = new google.maps.Marker({
+var pos67 = {lat: 42.04056, lng: -91.93389};
+  var marker67 = new google.maps.Marker({
   position: pos67,
   map: map,
   icon: icon,
-  title: 'LeBaron SW Stairwell'
-});
+  title: ''
+  });
 var contentString67 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "58.jpg"><br>'+
- '<br><b>Floor: </b>1<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=58">External Link</a><br><a href = "https://isustudyspots.github.io/LeBaron.html#LeB5<b>More info</b> </a>'+
+  '<p>Kildee Central Foyer<br><img width=250 src = "Kil1.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.04056,+-91.93389/@42.04056,-91.93389,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=67">Hours</a><br><a href = "https://isustudyspots.github.io/Kildee.html#Kil1">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -1684,20 +1966,20 @@ var contentString67 = '<div id="content">'+
       infoWindow67.open(map, marker67);
   });
 
-  var pos68 = {lat: 42.02842, lng: -93.64738};
-var marker68 = new google.maps.Marker({
+var pos68 = {lat: 42.04, lng: -91.93361};
+  var marker68 = new google.maps.Marker({
   position: pos68,
   map: map,
   icon: icon,
-  title: 'LeBaron W Foyer'
-});
+  title: ''
+  });
 var contentString68 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "76.jpg"><br>'+
- '<br><b>Floor: </b>1<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=76">External Link</a><br><a href = "https://isustudyspots.github.io/LeBaron.html#LeB6<b>More info</b> </a>'+
+  '<p>Kildee East Foyer<br><img width=250 src = "Kil2.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.04,+-91.93361/@42.04,-91.93361,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=67">Hours</a><br><a href = "https://isustudyspots.github.io/Kildee.html#Kil2">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -1706,20 +1988,20 @@ var contentString68 = '<div id="content">'+
       infoWindow68.open(map, marker68);
   });
 
-  var pos69 = {lat: 42.028527, lng: -93.647025};
-var marker69 = new google.maps.Marker({
+var pos69 = {lat: 42.04083, lng: -91.93306};
+  var marker69 = new google.maps.Marker({
   position: pos69,
   map: map,
   icon: icon,
-  title: 'MacKay 2nd Floor Hallways'
-});
+  title: ''
+  });
 var contentString69 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "83.jpg"><br>'+
- '<br><b>Floor: </b>2<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=83">External Link</a><br><a href = "https://isustudyspots.github.io/MacKay.html#Mac1<b>More info</b> </a>'+
+  '<p>Kildee South Foyer<br><img width=250 src = "Kil3.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.04083,+-91.93306/@42.04083,-91.93306,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=67">Hours</a><br><a href = "https://isustudyspots.github.io/Kildee.html#Kil3">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -1728,20 +2010,20 @@ var contentString69 = '<div id="content">'+
       infoWindow69.open(map, marker69);
   });
 
-  var pos70 = {lat: 42.028463, lng: -93.646512};
-var marker70 = new google.maps.Marker({
+var pos70 = {lat: 42.04056, lng: -91.93389};
+  var marker70 = new google.maps.Marker({
   position: pos70,
   map: map,
   icon: icon,
-  title: 'MacKay Basement Hallway'
-});
+  title: ''
+  });
 var contentString70 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "83.jpg"><br>'+
- '<br><b>Floor: </b>b<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=83">External Link</a><br><a href = "https://isustudyspots.github.io/MacKay.html#Mac2<b>More info</b> </a>'+
+  '<p>Kildee South Hallway<br><img width=250 src = "Kil4.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.04056,+-91.93389/@42.04056,-91.93389,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=67">Hours</a><br><a href = "https://isustudyspots.github.io/Kildee.html#Kil4">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -1750,20 +2032,20 @@ var contentString70 = '<div id="content">'+
       infoWindow70.open(map, marker70);
   });
 
-  var pos71 = {lat: 42.02843, lng: -93.64654};
-var marker71 = new google.maps.Marker({
+var pos71 = {lat: 42.04056, lng: -91.93389};
+  var marker71 = new google.maps.Marker({
   position: pos71,
   map: map,
   icon: icon,
-  title: 'MacKay S Foyer'
-});
+  title: ''
+  });
 var contentString71 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "83.jpg"><br>'+
- '<br><b>Floor: </b>1<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=83">External Link</a><br><a href = "https://isustudyspots.github.io/MacKay.html#Mac3<b>More info</b> </a>'+
+  '<p>Kildee West Hallway<br><img width=250 src = "Kil5.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.04056,+-91.93389/@42.04056,-91.93389,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=67">Hours</a><br><a href = "https://isustudyspots.github.io/Kildee.html#Kil5">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -1772,20 +2054,20 @@ var contentString71 = '<div id="content">'+
       infoWindow71.open(map, marker71);
   });
 
-  var pos72 = {lat: 42.026804, lng: -93.649778};
-var marker72 = new google.maps.Marker({
+var pos72 = {lat: 42.04056, lng: -91.93389};
+  var marker72 = new google.maps.Marker({
   position: pos72,
   map: map,
   icon: icon,
-  title: 'Marston E Lobby'
-});
+  title: ''
+  });
 var contentString72 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "86.jpg"><br>'+
- '<br><b>Floor: </b>3<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=86">External Link</a><br><a href = "https://isustudyspots.github.io/Marston.html#Mar1<b>More info</b> </a>'+
+  '<p>Kildee West Lounge<br><img width=250 src = "Kil6.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.04056,+-91.93389/@42.04056,-91.93389,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=67">Hours</a><br><a href = "https://isustudyspots.github.io/Kildee.html#Kil6">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -1794,20 +2076,20 @@ var contentString72 = '<div id="content">'+
       infoWindow72.open(map, marker72);
   });
 
-  var pos73 = {lat: 42.02672, lng: -93.649876};
-var marker73 = new google.maps.Marker({
+var pos73 = {lat: 42.04111, lng: -91.93222};
+  var marker73 = new google.maps.Marker({
   position: pos73,
   map: map,
   icon: icon,
-  title: 'Marston Hall Lounges'
-});
+  title: ''
+  });
 var contentString73 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "86.jpg"><br>'+
- '<br><b>Floor: </b>2<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=86">External Link</a><br><a href = "https://isustudyspots.github.io/Marston.html#Mar2<b>More info</b> </a>'+
+  '<p>Lagomarcino Cafe<br><img width=250 src = "Lag1.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.04111,+-91.93222/@42.04111,-91.93222,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=72">Hours</a><br><a href = "https://isustudyspots.github.io/Lagomarcino.html#Lag1">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -1816,20 +2098,20 @@ var contentString73 = '<div id="content">'+
       infoWindow73.open(map, marker73);
   });
 
-  var pos74 = {lat: 42.026809, lng: -93.649967};
-var marker74 = new google.maps.Marker({
+var pos74 = {lat: 42.04056, lng: -91.9325};
+  var marker74 = new google.maps.Marker({
   position: pos74,
   map: map,
   icon: icon,
-  title: 'Marston W Lounge'
-});
+  title: ''
+  });
 var contentString74 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "86.jpg"><br>'+
- '<br><b>Floor: </b>1<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=86">External Link</a><br><a href = "https://isustudyspots.github.io/Marston.html#Mar3<b>More info</b> </a>'+
+  '<p>Lagomarcino E Hallway<br><img width=250 src = "Lag2.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.04056,+-91.9325/@42.04056,-91.9325,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=72">Hours</a><br><a href = "https://isustudyspots.github.io/Lagomarcino.html#Lag2">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -1838,20 +2120,20 @@ var contentString74 = '<div id="content">'+
       infoWindow74.open(map, marker74);
   });
 
-  var pos75 = {lat: 42.035, lng: -91.93222};
-var marker75 = new google.maps.Marker({
+var pos75 = {lat: 42.04139, lng: -91.9325};
+  var marker75 = new google.maps.Marker({
   position: pos75,
   map: map,
   icon: icon,
-  title: 'MU by Multicultural Center'
-});
+  title: ''
+  });
 var contentString75 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "88.jpg"><br>'+
- '<br><b>Floor: </b>1<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=88">External Link</a><br><a href = "https://isustudyspots.github.io/MU.html#MU1<b>More info</b> </a>'+
+  '<p>Lagomarcino N Foyer<br><img width=250 src = "Lag3.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.04139,+-91.9325/@42.04139,-91.9325,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=72">Hours</a><br><a href = "https://isustudyspots.github.io/Lagomarcino.html#Lag3">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -1860,20 +2142,20 @@ var contentString75 = '<div id="content">'+
       infoWindow75.open(map, marker75);
   });
 
-  var pos76 = {lat: 42.03444, lng: -91.93222};
-var marker76 = new google.maps.Marker({
+var pos76 = {lat: 42.04111, lng: -91.93222};
+  var marker76 = new google.maps.Marker({
   position: pos76,
   map: map,
   icon: icon,
-  title: 'MU Multicultural Center'
-});
+  title: ''
+  });
 var contentString76 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "88.jpg"><br>'+
- '<br><b>Floor: </b>1<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=88">External Link</a><br><a href = "https://isustudyspots.github.io/MU.html#MU2<b>More info</b> </a>'+
+  '<p>Lagomarcino Courtyard<br><img width=250 src = "Lag4.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.04111,+-91.93222/@42.04111,-91.93222,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=72">Hours</a><br><a href = "https://isustudyspots.github.io/Lagomarcino.html#Lag4">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -1882,20 +2164,20 @@ var contentString76 = '<div id="content">'+
       infoWindow76.open(map, marker76);
   });
 
-  var pos77 = {lat: 42.03528, lng: -91.93167};
-var marker77 = new google.maps.Marker({
+var pos77 = {lat: 42.027538, lng: -93.642948};
+  var marker77 = new google.maps.Marker({
   position: pos77,
   map: map,
   icon: icon,
-  title: 'MU North Lounge'
-});
+  title: ''
+  });
 var contentString77 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "88.jpg"><br>'+
- '<br><b>Floor: </b>1<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=88">External Link</a><br><a href = "https://isustudyspots.github.io/MU.html#MU3<b>More info</b> </a>'+
+  '<p>Main Room<br><img width=250 src = "lan1.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.027538,+-93.642948/@42.027538,-93.642948,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=74">Hours</a><br><a href = "https://isustudyspots.github.io/Landscape.html#lan1">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -1904,20 +2186,20 @@ var contentString77 = '<div id="content">'+
       infoWindow77.open(map, marker77);
   });
 
-  var pos78 = {lat: 42.03528, lng: -91.93194};
-var marker78 = new google.maps.Marker({
+var pos78 = {lat: 42.02859, lng: -93.6476};
+  var marker78 = new google.maps.Marker({
   position: pos78,
   map: map,
   icon: icon,
-  title: 'MU Student Activity Center'
-});
+  title: ''
+  });
 var contentString78 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "88.jpg"><br>'+
- '<br><b>Floor: </b>1<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=88">External Link</a><br><a href = "https://isustudyspots.github.io/MU.html#MU4<b>More info</b> </a>'+
+  '<p>LeBaron Computer Lab<br><img width=250 src = "LeB1.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.02859,+-93.6476/@42.02859,-93.6476,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=76">Hours</a><br><a href = "https://isustudyspots.github.io/LeBaron.html#LeB1">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -1926,20 +2208,20 @@ var contentString78 = '<div id="content">'+
       infoWindow78.open(map, marker78);
   });
 
-  var pos79 = {lat: 42.035, lng: -91.93111};
-var marker79 = new google.maps.Marker({
+var pos79 = {lat: -93.6474, lng: -93.6474};
+  var marker79 = new google.maps.Marker({
   position: pos79,
   map: map,
   icon: icon,
-  title: 'MU Student Office Space'
-});
+  title: ''
+  });
 var contentString79 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "88.jpg"><br>'+
- '<br><b>Floor: </b>1<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=88">External Link</a><br><a href = "https://isustudyspots.github.io/MU.html#MU5<b>More info</b> </a>'+
+  '<p>Lebaron Corner<br><img width=250 src = "LeB2.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//-93.6474,+-93.6474/@-93.6474,-93.6474,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=76">Hours</a><br><a href = "https://isustudyspots.github.io/LeBaron.html#LeB2">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -1948,20 +2230,20 @@ var contentString79 = '<div id="content">'+
       infoWindow79.open(map, marker79);
   });
 
-  var pos80 = {lat: 42.035, lng: -91.93139};
-var marker80 = new google.maps.Marker({
+var pos80 = {lat: 42.027836, lng: -93.6474};
+  var marker80 = new google.maps.Marker({
   position: pos80,
   map: map,
   icon: icon,
-  title: 'MU West Room'
-});
+  title: ''
+  });
 var contentString80 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "88.jpg"><br>'+
- '<br><b>Floor: </b>1<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=88">External Link</a><br><a href = "https://isustudyspots.github.io/MU.html#MU6<b>More info</b> </a>'+
+  '<p>LeBaron Hallway 2094<br><img width=250 src = "LeB3.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.027836,+-93.6474/@42.027836,-93.6474,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=76">Hours</a><br><a href = "https://isustudyspots.github.io/LeBaron.html#LeB3">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -1970,20 +2252,20 @@ var contentString80 = '<div id="content">'+
       infoWindow80.open(map, marker80);
   });
 
-  var pos81 = {lat: 42.02472, lng: -93.64819};
-var marker81 = new google.maps.Marker({
+var pos81 = {lat: 42.028219, lng: -93.647151};
+  var marker81 = new google.maps.Marker({
   position: pos81,
   map: map,
   icon: icon,
-  title: 'Music Hall Foyer'
-});
+  title: ''
+  });
 var contentString81 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "92.jpg"><br>'+
- '<br><b>Floor: </b>1<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=92">External Link</a><br><a href = "https://isustudyspots.github.io/Music.html#Mus1<b>More info</b> </a>'+
+  '<p>LeBaron Hallway by 1052<br><img width=250 src = "LeB4.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.028219,+-93.647151/@42.028219,-93.647151,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=76">Hours</a><br><a href = "https://isustudyspots.github.io/LeBaron.html#LeB4">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -1992,20 +2274,20 @@ var contentString81 = '<div id="content">'+
       infoWindow81.open(map, marker81);
   });
 
-  var pos82 = {lat: 42.04056, lng: -91.93056};
-var marker82 = new google.maps.Marker({
+var pos82 = {lat: 42.02791, lng: -93.6476};
+  var marker82 = new google.maps.Marker({
   position: pos82,
   map: map,
   icon: icon,
-  title: 'Physics Foyer'
-});
+  title: ''
+  });
 var contentString82 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "104.jpg"><br>'+
- '<br><b>Floor: </b>1<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=104">External Link</a><br><a href = "https://isustudyspots.github.io/Physics.html#Phy1<b>More info</b> </a>'+
+  '<p>Human Nutritional Sciences SW Stairwell<br><img width=250 src = "LeB5.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.02791,+-93.6476/@42.02791,-93.6476,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=58">Hours</a><br><a href = "https://isustudyspots.github.io/LeBaron.html#LeB5">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -2014,20 +2296,20 @@ var contentString82 = '<div id="content">'+
       infoWindow82.open(map, marker82);
   });
 
-  var pos83 = {lat: 42.026609, lng: -93.644196};
-var marker83 = new google.maps.Marker({
+var pos83 = {lat: 42.02842, lng: -93.6474};
+  var marker83 = new google.maps.Marker({
   position: pos83,
   map: map,
   icon: icon,
-  title: 'Ross Basement Nook'
-});
+  title: ''
+  });
 var contentString83 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "111.jpg"><br>'+
- '<br><b>Floor: </b>B<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=111">External Link</a><br><a href = "https://isustudyspots.github.io/Ross.html#Ros1<b>More info</b> </a>'+
+  '<p>LeBaron W Foyer<br><img width=250 src = "LeB6.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.02842,+-93.6474/@42.02842,-93.6474,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=76">Hours</a><br><a href = "https://isustudyspots.github.io/LeBaron.html#LeB6">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -2036,20 +2318,20 @@ var contentString83 = '<div id="content">'+
       infoWindow83.open(map, marker83);
   });
 
-  var pos84 = {lat: 42.04028, lng: -91.93111};
-var marker84 = new google.maps.Marker({
+var pos84 = {lat: 42.02853, lng: -93.647};
+  var marker84 = new google.maps.Marker({
   position: pos84,
   map: map,
   icon: icon,
-  title: 'Science 3 Hallway'
-});
+  title: ''
+  });
 var contentString84 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = ".jpg"><br>'+
- '<br><b>Floor: </b>3<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=">External Link</a><br><a href = "https://isustudyspots.github.io/Science.html#Sci1<b>More info</b> </a>'+
+  '<p>MacKay 2nd Floor Hallways<br><img width=250 src = "Mac1.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.02853,+-93.647/@42.02853,-93.647,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=83">Hours</a><br><a href = "https://isustudyspots.github.io/MacKay.html#Mac1">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -2058,20 +2340,20 @@ var contentString84 = '<div id="content">'+
       infoWindow84.open(map, marker84);
   });
 
-  var pos85 = {lat: 42.04056, lng: -91.93139};
-var marker85 = new google.maps.Marker({
+var pos85 = {lat: 42.02846, lng: -93.6465};
+  var marker85 = new google.maps.Marker({
   position: pos85,
   map: map,
   icon: icon,
-  title: 'Science S Hallway'
-});
+  title: ''
+  });
 var contentString85 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = ".jpg"><br>'+
- '<br><b>Floor: </b>2<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=">External Link</a><br><a href = "https://isustudyspots.github.io/Science.html#Sci2<b>More info</b> </a>'+
+  '<p>MacKay Basement Hallway<br><img width=250 src = "Mac2.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.02846,+-93.6465/@42.02846,-93.6465,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=83">Hours</a><br><a href = "https://isustudyspots.github.io/MacKay.html#Mac2">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -2080,20 +2362,20 @@ var contentString85 = '<div id="content">'+
       infoWindow85.open(map, marker85);
   });
 
-  var pos86 = {lat: 42.04028, lng: -91.93556};
-var marker86 = new google.maps.Marker({
+var pos86 = {lat: 42.02843, lng: -93.6465};
+  var marker86 = new google.maps.Marker({
   position: pos86,
   map: map,
   icon: icon,
-  title: 'Seed Science Building Foyer & Lounge'
-});
+  title: ''
+  });
 var contentString86 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "117.jpg"><br>'+
- '<br><b>Floor: </b>1<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=117">External Link</a><br><a href = "https://isustudyspots.github.io/Seed.html#See1<b>More info</b> </a>'+
+  '<p>MacKay S Foyer<br><img width=250 src = "Mac3.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.02843,+-93.6465/@42.02843,-93.6465,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=83">Hours</a><br><a href = "https://isustudyspots.github.io/MacKay.html#Mac3">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -2102,20 +2384,20 @@ var contentString86 = '<div id="content">'+
       infoWindow86.open(map, marker86);
   });
 
-  var pos87 = {lat: 42.025637, lng: -93.644941};
-var marker87 = new google.maps.Marker({
+var pos87 = {lat: 42.0268, lng: -93.6498};
+  var marker87 = new google.maps.Marker({
   position: pos87,
   map: map,
   icon: icon,
-  title: 'Sloss House'
-});
+  title: ''
+  });
 var contentString87 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "118.jpg"><br>'+
- '<br><b>Floor: </b><br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=118">External Link</a><br><a href = "https://isustudyspots.github.io/Sloss.html#Slo1<b>More info</b> </a>'+
+  '<p>Marston E Lobby<br><img width=250 src = "Mars1.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.0268,+-93.6498/@42.0268,-93.6498,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=86">Hours</a><br><a href = "https://isustudyspots.github.io/Marston.html#Mars1">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -2124,20 +2406,20 @@ var contentString87 = '<div id="content">'+
       infoWindow87.open(map, marker87);
   });
 
-  var pos88 = {lat: 42.02851, lng: -93.64972};
-var marker88 = new google.maps.Marker({
+var pos88 = {lat: 42.02672, lng: -93.6499};
+  var marker88 = new google.maps.Marker({
   position: pos88,
   map: map,
   icon: icon,
-  title: 'Snedecor Student Lounge'
-});
+  title: ''
+  });
 var contentString88 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "119.jpg"><br>'+
- '<br><b>Floor: </b>1<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=119">External Link</a><br><a href = "https://isustudyspots.github.io/Snedecor.html#Sne1<b>More info</b> </a>'+
+  '<p>Marston Hall Lounges<br><img width=250 src = "Mars2.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.02672,+-93.6499/@42.02672,-93.6499,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=86">Hours</a><br><a href = "https://isustudyspots.github.io/Marston.html#Mars2">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -2146,20 +2428,20 @@ var contentString88 = '<div id="content">'+
       infoWindow88.open(map, marker88);
   });
 
-  var pos89 = {lat: 42.027542, lng: -93.652575};
-var marker89 = new google.maps.Marker({
+var pos89 = {lat: 42.02681, lng: -93.65};
+  var marker89 = new google.maps.Marker({
   position: pos89,
   map: map,
   icon: icon,
-  title: 'Sukup Atrium'
-});
+  title: ''
+  });
 var contentString89 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "258.jpg"><br>'+
- '<br><b>Floor: </b>1<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=258">External Link</a><br><a href = "https://isustudyspots.github.io/Sukup.html#Suk1<b>More info</b> </a>'+
+  '<p>Marston W Lounge<br><img width=250 src = "Mars3.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.02681,+-93.65/@42.02681,-93.65,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=86">Hours</a><br><a href = "https://isustudyspots.github.io/Marston.html#Mars3">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -2168,20 +2450,20 @@ var contentString89 = '<div id="content">'+
       infoWindow89.open(map, marker89);
   });
 
-  var pos90 = {lat: 42.02751, lng: -93.65283};
-var marker90 = new google.maps.Marker({
+var pos90 = {lat: 42.031244, lng: -93.649701};
+  var marker90 = new google.maps.Marker({
   position: pos90,
   map: map,
   icon: icon,
-  title: 'Sukup B Lounge'
-});
+  title: ''
+  });
 var contentString90 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "258.jpg"><br>'+
- '<br><b>Floor: </b>B<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=258">External Link</a><br><a href = "https://isustudyspots.github.io/Sukup.html#Suk2<b>More info</b> </a>'+
+  '<p>Moly Bio Foyer<br><img width=250 src = "mol1.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.031244,+-93.649701/@42.031244,-93.649701,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=90">Hours</a><br><a href = "https://isustudyspots.github.io/Molecular.html#mol1">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -2190,20 +2472,20 @@ var contentString90 = '<div id="content">'+
       infoWindow90.open(map, marker90);
   });
 
-  var pos91 = {lat: 42.02766, lng: -93.644073};
-var marker91 = new google.maps.Marker({
+var pos91 = {lat: 42.031384, lng: -93.649733};
+  var marker91 = new google.maps.Marker({
   position: pos91,
   map: map,
   icon: icon,
-  title: 'Troxel Foyer'
-});
+  title: ''
+  });
 var contentString91 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = "249.jpg"><br>'+
- '<br><b>Floor: </b>1<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=249">External Link</a><br><a href = "https://isustudyspots.github.io/Troxel.html#Tro1<b>More info</b> </a>'+
+  '<p>Moly Bio Lounges<br><img width=250 src = "mol2.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.031384,+-93.649733/@42.031384,-93.649733,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=90">Hours</a><br><a href = "https://isustudyspots.github.io/Molecular.html#mol2">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -2212,20 +2494,20 @@ var contentString91 = '<div id="content">'+
       infoWindow91.open(map, marker91);
   });
 
-  var pos92 = {lat: 42.02566, lng: -93.64844};
-var marker92 = new google.maps.Marker({
+var pos92 = {lat: 42.035, lng: -91.93222};
+  var marker92 = new google.maps.Marker({
   position: pos92,
   map: map,
   icon: icon,
-  title: 'George Washington Carver Plaza'
-});
+  title: ''
+  });
 var contentString92 = '<div id="content">'+
   '<div id="siteNotice">'+
   '</div>'+
   '<h1 id="bodyContent">'+
   '<div id = "bodyContent">'+
-  //'<p><img width=250 src = ".jpg"><br>'+
- '<br><b>Floor: </b>Outdoor<br><b>Hours</b> <a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=">External Link</a><br><a href = "https://isustudyspots.github.io/.html#<b>More info</b> </a>'+
+  '<p>MU by Multicultural Center<br><img width=250 src = "MU1.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.035,+-91.93222/@42.035,-91.93222,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=88">Hours</a><br><a href = "https://isustudyspots.github.io/MU.html#MU1">More info</a>'+
   '</p>'+
   '</div>'+
   '</div>;'
@@ -2233,6 +2515,492 @@ var contentString92 = '<div id="content">'+
       marker92.addListener('click',function() {
       infoWindow92.open(map, marker92);
   });
+
+var pos93 = {lat: 42.03444, lng: -91.93222};
+  var marker93 = new google.maps.Marker({
+  position: pos93,
+  map: map,
+  icon: icon,
+  title: ''
+  });
+var contentString93 = '<div id="content">'+
+  '<div id="siteNotice">'+
+  '</div>'+
+  '<h1 id="bodyContent">'+
+  '<div id = "bodyContent">'+
+  '<p>MU Multicultural Center<br><img width=250 src = "MU2.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.03444,+-91.93222/@42.03444,-91.93222,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=88">Hours</a><br><a href = "https://isustudyspots.github.io/MU.html#MU2">More info</a>'+
+  '</p>'+
+  '</div>'+
+  '</div>;'
+ var infoWindow93 = new google.maps.InfoWindow({content: contentString93});
+      marker93.addListener('click',function() {
+      infoWindow93.open(map, marker93);
+  });
+
+var pos94 = {lat: 42.03528, lng: -91.93167};
+  var marker94 = new google.maps.Marker({
+  position: pos94,
+  map: map,
+  icon: icon,
+  title: ''
+  });
+var contentString94 = '<div id="content">'+
+  '<div id="siteNotice">'+
+  '</div>'+
+  '<h1 id="bodyContent">'+
+  '<div id = "bodyContent">'+
+  '<p>MU North Lounge<br><img width=250 src = "MU3.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.03528,+-91.93167/@42.03528,-91.93167,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=88">Hours</a><br><a href = "https://isustudyspots.github.io/MU.html#MU3">More info</a>'+
+  '</p>'+
+  '</div>'+
+  '</div>;'
+ var infoWindow94 = new google.maps.InfoWindow({content: contentString94});
+      marker94.addListener('click',function() {
+      infoWindow94.open(map, marker94);
+  });
+
+var pos95 = {lat: 42.03528, lng: -91.93194};
+  var marker95 = new google.maps.Marker({
+  position: pos95,
+  map: map,
+  icon: icon,
+  title: ''
+  });
+var contentString95 = '<div id="content">'+
+  '<div id="siteNotice">'+
+  '</div>'+
+  '<h1 id="bodyContent">'+
+  '<div id = "bodyContent">'+
+  '<p>MU Student Activity Center<br><img width=250 src = "MU4.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.03528,+-91.93194/@42.03528,-91.93194,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=88">Hours</a><br><a href = "https://isustudyspots.github.io/MU.html#MU4">More info</a>'+
+  '</p>'+
+  '</div>'+
+  '</div>;'
+ var infoWindow95 = new google.maps.InfoWindow({content: contentString95});
+      marker95.addListener('click',function() {
+      infoWindow95.open(map, marker95);
+  });
+
+var pos96 = {lat: 42.035, lng: -91.93111};
+  var marker96 = new google.maps.Marker({
+  position: pos96,
+  map: map,
+  icon: icon,
+  title: ''
+  });
+var contentString96 = '<div id="content">'+
+  '<div id="siteNotice">'+
+  '</div>'+
+  '<h1 id="bodyContent">'+
+  '<div id = "bodyContent">'+
+  '<p>MU Student Office Space<br><img width=250 src = "MU5.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.035,+-91.93111/@42.035,-91.93111,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=88">Hours</a><br><a href = "https://isustudyspots.github.io/MU.html#MU5">More info</a>'+
+  '</p>'+
+  '</div>'+
+  '</div>;'
+ var infoWindow96 = new google.maps.InfoWindow({content: contentString96});
+      marker96.addListener('click',function() {
+      infoWindow96.open(map, marker96);
+  });
+
+var pos97 = {lat: 42.035, lng: -91.93139};
+  var marker97 = new google.maps.Marker({
+  position: pos97,
+  map: map,
+  icon: icon,
+  title: ''
+  });
+var contentString97 = '<div id="content">'+
+  '<div id="siteNotice">'+
+  '</div>'+
+  '<h1 id="bodyContent">'+
+  '<div id = "bodyContent">'+
+  '<p>MU West Room<br><img width=250 src = "MU6.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.035,+-91.93139/@42.035,-91.93139,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=88">Hours</a><br><a href = "https://isustudyspots.github.io/MU.html#MU6">More info</a>'+
+  '</p>'+
+  '</div>'+
+  '</div>;'
+ var infoWindow97 = new google.maps.InfoWindow({content: contentString97});
+      marker97.addListener('click',function() {
+      infoWindow97.open(map, marker97);
+  });
+
+var pos98 = {lat: 42.02472, lng: -93.6482};
+  var marker98 = new google.maps.Marker({
+  position: pos98,
+  map: map,
+  icon: icon,
+  title: ''
+  });
+var contentString98 = '<div id="content">'+
+  '<div id="siteNotice">'+
+  '</div>'+
+  '<h1 id="bodyContent">'+
+  '<div id = "bodyContent">'+
+  '<p>Music Hall Foyer<br><img width=250 src = "Mus1.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.02472,+-93.6482/@42.02472,-93.6482,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=92">Hours</a><br><a href = "https://isustudyspots.github.io/Music.html#Mus1">More info</a>'+
+  '</p>'+
+  '</div>'+
+  '</div>;'
+ var infoWindow98 = new google.maps.InfoWindow({content: contentString98});
+      marker98.addListener('click',function() {
+      infoWindow98.open(map, marker98);
+  });
+
+var pos99 = {lat: 42.04056, lng: -91.93056};
+  var marker99 = new google.maps.Marker({
+  position: pos99,
+  map: map,
+  icon: icon,
+  title: ''
+  });
+var contentString99 = '<div id="content">'+
+  '<div id="siteNotice">'+
+  '</div>'+
+  '<h1 id="bodyContent">'+
+  '<div id = "bodyContent">'+
+  '<p>Physics Foyer<br><img width=250 src = "Phy1.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.04056,+-91.93056/@42.04056,-91.93056,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=104">Hours</a><br><a href = "https://isustudyspots.github.io/Physics.html#Phy1">More info</a>'+
+  '</p>'+
+  '</div>'+
+  '</div>;'
+ var infoWindow99 = new google.maps.InfoWindow({content: contentString99});
+      marker99.addListener('click',function() {
+      infoWindow99.open(map, marker99);
+  });
+
+var pos100 = {lat: 42.02661, lng: -93.6442};
+  var marker100 = new google.maps.Marker({
+  position: pos100,
+  map: map,
+  icon: icon,
+  title: ''
+  });
+var contentString100 = '<div id="content">'+
+  '<div id="siteNotice">'+
+  '</div>'+
+  '<h1 id="bodyContent">'+
+  '<div id = "bodyContent">'+
+  '<p>Ross Basement Nook<br><img width=250 src = "Ros1.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.02661,+-93.6442/@42.02661,-93.6442,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=111">Hours</a><br><a href = "https://isustudyspots.github.io/Ross.html#Ros1">More info</a>'+
+  '</p>'+
+  '</div>'+
+  '</div>;'
+ var infoWindow100 = new google.maps.InfoWindow({content: contentString100});
+      marker100.addListener('click',function() {
+      infoWindow100.open(map, marker100);
+  });
+
+var pos101 = {lat: 42.04028, lng: -91.93111};
+  var marker101 = new google.maps.Marker({
+  position: pos101,
+  map: map,
+  icon: icon,
+  title: ''
+  });
+var contentString101 = '<div id="content">'+
+  '<div id="siteNotice">'+
+  '</div>'+
+  '<h1 id="bodyContent">'+
+  '<div id = "bodyContent">'+
+  '<p>Science 3 Hallway<br><img width=250 src = "Sci1.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.04028,+-91.93111/@42.04028,-91.93111,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=115">Hours</a><br><a href = "https://isustudyspots.github.io/Science.html#Sci1">More info</a>'+
+  '</p>'+
+  '</div>'+
+  '</div>;'
+ var infoWindow101 = new google.maps.InfoWindow({content: contentString101});
+      marker101.addListener('click',function() {
+      infoWindow101.open(map, marker101);
+  });
+
+var pos102 = {lat: 42.04056, lng: -91.93139};
+  var marker102 = new google.maps.Marker({
+  position: pos102,
+  map: map,
+  icon: icon,
+  title: ''
+  });
+var contentString102 = '<div id="content">'+
+  '<div id="siteNotice">'+
+  '</div>'+
+  '<h1 id="bodyContent">'+
+  '<div id = "bodyContent">'+
+  '<p>Science S Hallway<br><img width=250 src = "Sci2.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.04056,+-91.93139/@42.04056,-91.93139,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=115">Hours</a><br><a href = "https://isustudyspots.github.io/Science.html#Sci2">More info</a>'+
+  '</p>'+
+  '</div>'+
+  '</div>;'
+ var infoWindow102 = new google.maps.InfoWindow({content: contentString102});
+      marker102.addListener('click',function() {
+      infoWindow102.open(map, marker102);
+  });
+
+var pos103 = {lat: 42.030069, lng: -93.646525};
+  var marker103 = new google.maps.Marker({
+  position: pos103,
+  map: map,
+  icon: icon,
+  title: ''
+  });
+var contentString103 = '<div id="content">'+
+  '<div id="siteNotice">'+
+  '</div>'+
+  '<h1 id="bodyContent">'+
+  '<div id = "bodyContent">'+
+  '<p>Science II Lounge<br><img width=250 src = "sci3.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.030069,+-93.646525/@42.030069,-93.646525,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=116">Hours</a><br><a href = "https://isustudyspots.github.io/Science II.html#sci3">More info</a>'+
+  '</p>'+
+  '</div>'+
+  '</div>;'
+ var infoWindow103 = new google.maps.InfoWindow({content: contentString103});
+      marker103.addListener('click',function() {
+      infoWindow103.open(map, marker103);
+  });
+
+var pos104 = {lat: 42.029265, lng: -93.64235};
+  var marker104 = new google.maps.Marker({
+  position: pos104,
+  map: map,
+  icon: icon,
+  title: ''
+  });
+var contentString104 = '<div id="content">'+
+  '<div id="siteNotice">'+
+  '</div>'+
+  '<h1 id="bodyContent">'+
+  '<div id = "bodyContent">'+
+  '<p>Seed Science Courtyard<br><img width=250 src = "See2.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.029265,+-93.64235/@42.029265,-93.64235,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=">Hours</a><br><a href = "https://isustudyspots.github.io/Seed.html#See2">More info</a>'+
+  '</p>'+
+  '</div>'+
+  '</div>;'
+ var infoWindow104 = new google.maps.InfoWindow({content: contentString104});
+      marker104.addListener('click',function() {
+      infoWindow104.open(map, marker104);
+  });
+
+var pos105 = {lat: 42.04028, lng: -91.93556};
+  var marker105 = new google.maps.Marker({
+  position: pos105,
+  map: map,
+  icon: icon,
+  title: ''
+  });
+var contentString105 = '<div id="content">'+
+  '<div id="siteNotice">'+
+  '</div>'+
+  '<h1 id="bodyContent">'+
+  '<div id = "bodyContent">'+
+  '<p>Seed Science Building Foyer & Lounge<br><img width=250 src = "See1.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.04028,+-91.93556/@42.04028,-91.93556,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=117">Hours</a><br><a href = "https://isustudyspots.github.io/Seed.html#See1">More info</a>'+
+  '</p>'+
+  '</div>'+
+  '</div>;'
+ var infoWindow105 = new google.maps.InfoWindow({content: contentString105});
+      marker105.addListener('click',function() {
+      infoWindow105.open(map, marker105);
+  });
+
+var pos106 = {lat: 42.02564, lng: -93.6449};
+  var marker106 = new google.maps.Marker({
+  position: pos106,
+  map: map,
+  icon: icon,
+  title: ''
+  });
+var contentString106 = '<div id="content">'+
+  '<div id="siteNotice">'+
+  '</div>'+
+  '<h1 id="bodyContent">'+
+  '<div id = "bodyContent">'+
+  '<p>Sloss House<br><img width=250 src = "Slo1.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.02564,+-93.6449/@42.02564,-93.6449,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=118">Hours</a><br><a href = "https://isustudyspots.github.io/Sloss.html#Slo1">More info</a>'+
+  '</p>'+
+  '</div>'+
+  '</div>;'
+ var infoWindow106 = new google.maps.InfoWindow({content: contentString106});
+      marker106.addListener('click',function() {
+      infoWindow106.open(map, marker106);
+  });
+
+var pos107 = {lat: 42.02851, lng: -93.6497};
+  var marker107 = new google.maps.Marker({
+  position: pos107,
+  map: map,
+  icon: icon,
+  title: ''
+  });
+var contentString107 = '<div id="content">'+
+  '<div id="siteNotice">'+
+  '</div>'+
+  '<h1 id="bodyContent">'+
+  '<div id = "bodyContent">'+
+  '<p>Snedecor Student Lounge<br><img width=250 src = "Sne1.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.02851,+-93.6497/@42.02851,-93.6497,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=119">Hours</a><br><a href = "https://isustudyspots.github.io/Snedecor.html#Sne1">More info</a>'+
+  '</p>'+
+  '</div>'+
+  '</div>;'
+ var infoWindow107 = new google.maps.InfoWindow({content: contentString107});
+      marker107.addListener('click',function() {
+      infoWindow107.open(map, marker107);
+  });
+
+var pos108 = {lat: 42.025357, lng: -93.65015};
+  var marker108 = new google.maps.Marker({
+  position: pos108,
+  map: map,
+  icon: icon,
+  title: ''
+  });
+var contentString108 = '<div id="content">'+
+  '<div id="siteNotice">'+
+  '</div>'+
+  '<h1 id="bodyContent">'+
+  '<div id = "bodyContent">'+
+  '<p>Multicultural Student Affairs Office<br><img width=250 src = "stu1.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.025357,+-93.65015/@42.025357,-93.65015,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=178">Hours</a><br><a href = "https://isustudyspots.github.io/Success.html#stu1">More info</a>'+
+  '</p>'+
+  '</div>'+
+  '</div>;'
+ var infoWindow108 = new google.maps.InfoWindow({content: contentString108});
+      marker108.addListener('click',function() {
+      infoWindow108.open(map, marker108);
+  });
+
+var pos109 = {lat: 42.02754, lng: -93.6526};
+  var marker109 = new google.maps.Marker({
+  position: pos109,
+  map: map,
+  icon: icon,
+  title: ''
+  });
+var contentString109 = '<div id="content">'+
+  '<div id="siteNotice">'+
+  '</div>'+
+  '<h1 id="bodyContent">'+
+  '<div id = "bodyContent">'+
+  '<p>Sukup Atrium<br><img width=250 src = "Suk1.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.02754,+-93.6526/@42.02754,-93.6526,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=258">Hours</a><br><a href = "https://isustudyspots.github.io/Sukup.html#Suk1">More info</a>'+
+  '</p>'+
+  '</div>'+
+  '</div>;'
+ var infoWindow109 = new google.maps.InfoWindow({content: contentString109});
+      marker109.addListener('click',function() {
+      infoWindow109.open(map, marker109);
+  });
+
+var pos110 = {lat: 42.02751, lng: -93.6528};
+  var marker110 = new google.maps.Marker({
+  position: pos110,
+  map: map,
+  icon: icon,
+  title: ''
+  });
+var contentString110 = '<div id="content">'+
+  '<div id="siteNotice">'+
+  '</div>'+
+  '<h1 id="bodyContent">'+
+  '<div id = "bodyContent">'+
+  '<p>Sukup B Lounge<br><img width=250 src = "Suk2.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.02751,+-93.6528/@42.02751,-93.6528,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=258">Hours</a><br><a href = "https://isustudyspots.github.io/Sukup.html#Suk2">More info</a>'+
+  '</p>'+
+  '</div>'+
+  '</div>;'
+ var infoWindow110 = new google.maps.InfoWindow({content: contentString110});
+      marker110.addListener('click',function() {
+      infoWindow110.open(map, marker110);
+  });
+
+var pos111 = {lat: 42.027809, lng: -93.650441};
+  var marker111 = new google.maps.Marker({
+  position: pos111,
+  map: map,
+  icon: icon,
+  title: ''
+  });
+var contentString111 = '<div id="content">'+
+  '<div id="siteNotice">'+
+  '</div>'+
+  '<h1 id="bodyContent">'+
+  '<div id = "bodyContent">'+
+  '<p>Corner By Elevator<br><img width=250 src = "swe1.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.027809,+-93.650441/@42.027809,-93.650441,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=127">Hours</a><br><a href = "https://isustudyspots.github.io/Sweeny.html#swe1">More info</a>'+
+  '</p>'+
+  '</div>'+
+  '</div>;'
+ var infoWindow111 = new google.maps.InfoWindow({content: contentString111});
+      marker111.addListener('click',function() {
+      infoWindow111.open(map, marker111);
+  });
+
+var pos112 = {lat: 42.027809, lng: -93.650441};
+  var marker112 = new google.maps.Marker({
+  position: pos112,
+  map: map,
+  icon: icon,
+  title: ''
+  });
+var contentString112 = '<div id="content">'+
+  '<div id="siteNotice">'+
+  '</div>'+
+  '<h1 id="bodyContent">'+
+  '<div id = "bodyContent">'+
+  '<p>East End of Hallway<br><img width=250 src = "swe2.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.027809,+-93.650441/@42.027809,-93.650441,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=127">Hours</a><br><a href = "https://isustudyspots.github.io/Sweeny.html#swe2">More info</a>'+
+  '</p>'+
+  '</div>'+
+  '</div>;'
+ var infoWindow112 = new google.maps.InfoWindow({content: contentString112});
+      marker112.addListener('click',function() {
+      infoWindow112.open(map, marker112);
+  });
+
+var pos113 = {lat: 42.027669, lng: -93.651324};
+  var marker113 = new google.maps.Marker({
+  position: pos113,
+  map: map,
+  icon: icon,
+  title: ''
+  });
+var contentString113 = '<div id="content">'+
+  '<div id="siteNotice">'+
+  '</div>'+
+  '<h1 id="bodyContent">'+
+  '<div id = "bodyContent">'+
+  '<p>Sweeney W Foyer<br><img width=250 src = "swe1.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.027669,+-93.651324/@42.027669,-93.651324,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=127">Hours</a><br><a href = "https://isustudyspots.github.io/Sweeny.html#swe1">More info</a>'+
+  '</p>'+
+  '</div>'+
+  '</div>;'
+ var infoWindow113 = new google.maps.InfoWindow({content: contentString113});
+      marker113.addListener('click',function() {
+      infoWindow113.open(map, marker113);
+  });
+
+var pos114 = {lat: 42.02766, lng: -93.6441};
+  var marker114 = new google.maps.Marker({
+  position: pos114,
+  map: map,
+  icon: icon,
+  title: ''
+  });
+var contentString114 = '<div id="content">'+
+  '<div id="siteNotice">'+
+  '</div>'+
+  '<h1 id="bodyContent">'+
+  '<div id = "bodyContent">'+
+  '<p>Troxel Foyer<br><img width=250 src = "Tro1.jpg"><br>'+
+ '<br><a href="https://www.google.com/maps/dir//42.02766,+-93.6441/@42.02766,-93.6441,12.88z/data=!4m7!4m6!1m0!1m3!2m2!1d-93.64962!2d42.02769!3e2">Get Directions</a><br><a href = "https:www.fpm.iastate.edu/maps/buildings/building.asp?id=249">Hours</a><br><a href = "https://isustudyspots.github.io/Troxel.html#Tro1">More info</a>'+
+  '</p>'+
+  '</div>'+
+  '</div>;'
+ var infoWindow114 = new google.maps.InfoWindow({content: contentString114});
+      marker114.addListener('click',function() {
+      infoWindow114.open(map, marker114);
+  });
+
+
 
 }
 	  
